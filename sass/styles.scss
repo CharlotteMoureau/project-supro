@@ -1,19 +1,22 @@
+// Utils
 @import './Utils/variables';
 @import './Utils/functions';
 @import './Utils/mixins';
 @import './Utils/placeholders';
 
+// Base
 @import './Base/base';
-@import './Base/typography';
 
+// Composants
 @import './Composants/buttons';
 
+// Layouts
 @import './Layouts/header';
-@import './Layouts/nav';
-@import './Layouts/container';
-@import './Layouts/form';
 @import './Layouts/footer';
 
-@import './Pages/work';
+// Pages
 @import './Pages/about';
-@import './Pages/project';
+@import './Pages/contact';
+@import './Pages/homepage';
+@import './Pages/product';
+@import './Pages/shop';
