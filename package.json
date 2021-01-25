@@ -1,0 +1,13 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/styles.scss:./public/css/styles.css",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

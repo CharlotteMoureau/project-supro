@@ -1,0 +1,25 @@
+//Base
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: 400;
+    list-style: none;
+    background-color: $tertiary-color;
+
+    @include tablets-only{
+        background-color: rgb(50,50,50);
+    }
+    
+    @include mobile-only{
+        background-color: rgb(73, 189, 27);
+    }
+}
+

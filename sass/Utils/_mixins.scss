@@ -1,0 +1,23 @@
+// Mixins
+
+@mixin mobile-only {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+/*
+    @include mobile-only{
+        //Placer les contenu ici
+    }
+*/
+
+@mixin tablets-only {
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+/*
+    @include tablets-only{
+        //Placer les contenu ici
+    }
+*/
