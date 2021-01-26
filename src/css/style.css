@@ -66,54 +66,93 @@ main {
       margin-bottom: 0; }
     main .about-us section .big-moments .timeline p {
       font-size: 0.9em; }
-  main .no-drama p {
-    color: #999; }
-  main .no-drama .video {
-    position: relative;
-    height: 330px;
-    text-align: center;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url("/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg");
-    margin-left: 5%;
-    margin-right: 5%; }
-    main .no-drama .video .play, main .no-drama .video h2, main .no-drama .video h3 {
-      position: absolute;
-      color: #fff;
-      width: 100%; }
-    main .no-drama .video .play {
-      top: 70%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 20%; }
-    main .no-drama .video h2 {
-      top: 35%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-weight: 900;
-      font-size: 3.5em; }
-    main .no-drama .video h3 {
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2em;
+  main .no-drama {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 15%; }
+    main .no-drama p {
+      color: #999; }
+    main .no-drama .video {
+      position: relative;
+      height: 330px;
+      text-align: center;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg"); }
+      main .no-drama .video .play, main .no-drama .video h2, main .no-drama .video h3 {
+        position: absolute;
+        color: #fff;
+        width: 100%; }
+      main .no-drama .video .play {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20%; }
+      main .no-drama .video h2 {
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 900;
+        font-size: 3.5em; }
+      main .no-drama .video h3 {
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        font-weight: 400; }
+    main .no-drama .pros {
+      padding: 5%;
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr 4fr;
+      grid-column-gap: 5%; }
+      main .no-drama .pros i {
+        color: #f68773;
+        padding-top: 50%; }
+      main .no-drama .pros h3 {
+        font-size: small;
+        font-weight: 500;
+        margin-bottom: 0; }
+      main .no-drama .pros p {
+        font-size: small;
+        margin-top: 0; }
+    main .no-drama .technology h2 {
+      text-align: center;
       font-weight: 400; }
-  main .no-drama .pros {
-    padding: 5%;
-    background-color: blue;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr 4fr;
-    grid-column-gap: 5%; }
-    main .no-drama .pros i {
-      color: #f68773;
-      padding-top: 50%; }
-    main .no-drama .pros h3 {
+    main .no-drama .technology p {
       font-size: small;
-      font-weight: 500;
-      margin-bottom: 0; }
-    main .no-drama .pros p {
+      line-height: 1.5em; }
+  main .members {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 30%; }
+    main .members p {
+      color: #999;
       font-size: small;
       margin-top: 0; }
+    main .members h2 {
+      text-align: center;
+      font-weight: 500; }
+    main .members .people {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 30px; }
+      main .members .people img {
+        width: 100%; }
+      main .members .people h3 {
+        font-size: medium;
+        line-height: 1.5em;
+        margin: 0; }
+  main .brands {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: center; }
+    main .brands img {
+      width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
