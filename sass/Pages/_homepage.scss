@@ -20,37 +20,63 @@ main {
   align-items: center;
   flex-flow: column;
   h2 {
-    font-size: 4em;
+    font-size: 2.5em;
+    margin: .5em 0;
+  }
+  h4 {
+    font-size: 1em;
+    font-weight: 200;
+  }
+  a {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: $primary-color;
   }
 }
 .winter, .hairband, .hairband-2, .corduroy {
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-.winter {
-  height: 90vh;
-  background: no-repeat url(../img/homepage/sl3-1.jpg) top;
-  background-size: 400%;
-  text-align: center;
+  padding: 2em;
 }
 .hairband, .hairband-2, .corduroy {
   height: 40vh;
   background-size: cover;
 }
+.winter, .hairband-2 {
+  align-items: center;
+  h2 {
+    text-align: center;
+    color: $quinary-color;
+  }
+  h4 {
+    color: $quinary-color;
+  }
+  a {
+    color: $quinary-color;
+  }
+}
+.hairband, .corduroy {
+  h4 {
+    color: $secondary-color;
+  }
+}
+.winter {
+  height: 90vh;
+  background: no-repeat url(../img/homepage/sl3-1.jpg) center;
+  background-size: 400%;
+  h2 {
+    font-size: 4em;
+  }
+}
 .hairband {
-  background: no-repeat url(../img/homepage/banner_h1_1.jpg) right;
+  background: no-repeat url(../img/homepage/banner_h1_1.jpg) right center;
 }
 .hairband-2 {
-  background: no-repeat url(../img/homepage/banner_h1_2.jpg) top;
+  background: no-repeat url(../img/homepage/banner_h1_2.jpg) center;
 }
 .corduroy {
   background: no-repeat url(../img/homepage/banner_h1_3.jpg) left;
-}
-.winter, .hairband-2 {
-  h2 {
-    color: $quinary-color;
-  }
+  text-align: right;
 }
