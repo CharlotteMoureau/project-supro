@@ -1,13 +1,18 @@
-* {
-  box-sizing: border-box;
-}
+/* Error: Expected expression.
+ *    ,
+ * 47 |     color: ;
+ *    |            ^
+ *    '
+ *   sass/Pages/_homepage.scss 47:12  @import
+ *   sass/styles.scss 20:9            root stylesheet */
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  font-weight: 400;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 47 \2502      color: ;\a    \2502             ^\a    \2575 \a   sass/Pages/_homepage.scss 47:12  @import\a   sass/styles.scss 20:9            root stylesheet";
 }
-
-/*# sourceMappingURL=styles.css.map */
