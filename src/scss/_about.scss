@@ -1,0 +1,164 @@
+@import 'variables';
+
+main {
+    font-family: 'Roboto', sans-serif;
+    color: $primary-color;
+    margin-top: 20%;
+    font-size: medium;
+    
+    .about-us {
+
+        p {
+            color: $secondary-color;
+        }
+
+        section {   
+            
+            img {
+                width: 100%;
+            }
+
+            p {
+                font-size: 80%;
+                line-height: 2em;
+            }
+
+            .description {
+                padding-left: 8%;
+                padding-right: 8%;
+
+                h1 {
+                    color: $tertiary-color;
+                }
+            }
+
+            .co-founder {
+                padding-left: 5%;
+                padding-right: 5%;
+                margin-top: 15%;
+                margin-bottom: 10%;
+
+                .quote {
+
+                    p {
+                        color: $primary-color;
+                        font-size: larger;
+                        line-height: 1.25em;
+                    }
+                }
+
+                h3 {
+                    color: $tertiary-color;
+                    font-size: small;
+                }
+
+                h2 {
+                    margin-top: 0;
+                    padding-bottom: 5%;
+                    font-weight: 1em;
+                    font-size: large;
+                }
+
+                p {
+                    line-height: 1.5em;
+                }
+            }
+
+            .big-moments {
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 10%;
+                padding-bottom: 15%;
+
+                .timeline {
+
+                    h2 {
+                        margin-bottom: 0;
+                        padding-top: 5%;
+                    }
+
+                    h3 {
+                        font-size: x-large;
+                        margin-bottom: 0;
+                    }
+
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+
+    .no-drama {
+              
+        p {
+            color: $secondary-color;
+        }
+
+        .video {
+            position: relative;
+            height: 330px;
+            text-align: center;
+            background-size: cover; 
+            background-position: center center; 
+            background-repeat: no-repeat; 
+            background-image: url('/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg');
+            margin-left: 5%;
+            margin-right: 5%;
+            
+            .play, h2, h3 {
+                position: absolute;
+                color: $quinary-color;
+                width: 100%;
+            }
+
+            .play {
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20%;
+            }
+
+            h2 {
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-weight: 900;
+                font-size: 3.5em;
+            }
+
+            h3 {
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 2em;
+                font-weight: 400;
+            }
+        }
+
+        .pros {
+            padding: 5%;
+            background-color: blue;
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr 4fr;
+            grid-column-gap: 5%;
+            
+            i {
+                color: $tertiary-color;
+                padding-top: 50%;
+            }
+
+            h3 {
+                font-size: small;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: small;
+                margin-top: 0;
+            }
+        }
+    }
+}

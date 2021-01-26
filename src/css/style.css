@@ -17,4 +17,103 @@ Header {
         width: 8%;
         padding: 4%; }
 
+main {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  margin-top: 20%;
+  font-size: medium; }
+  main .about-us p {
+    color: #999; }
+  main .about-us section img {
+    width: 100%; }
+  main .about-us section p {
+    font-size: 80%;
+    line-height: 2em; }
+  main .about-us section .description {
+    padding-left: 8%;
+    padding-right: 8%; }
+    main .about-us section .description h1 {
+      color: #f68773; }
+  main .about-us section .co-founder {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 15%;
+    margin-bottom: 10%; }
+    main .about-us section .co-founder .quote p {
+      color: #222;
+      font-size: larger;
+      line-height: 1.25em; }
+    main .about-us section .co-founder h3 {
+      color: #f68773;
+      font-size: small; }
+    main .about-us section .co-founder h2 {
+      margin-top: 0;
+      padding-bottom: 5%;
+      font-weight: 1em;
+      font-size: large; }
+    main .about-us section .co-founder p {
+      line-height: 1.5em; }
+  main .about-us section .big-moments {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 15%; }
+    main .about-us section .big-moments .timeline h2 {
+      margin-bottom: 0;
+      padding-top: 5%; }
+    main .about-us section .big-moments .timeline h3 {
+      font-size: x-large;
+      margin-bottom: 0; }
+    main .about-us section .big-moments .timeline p {
+      font-size: 0.9em; }
+  main .no-drama p {
+    color: #999; }
+  main .no-drama .video {
+    position: relative;
+    height: 330px;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg");
+    margin-left: 5%;
+    margin-right: 5%; }
+    main .no-drama .video .play, main .no-drama .video h2, main .no-drama .video h3 {
+      position: absolute;
+      color: #fff;
+      width: 100%; }
+    main .no-drama .video .play {
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20%; }
+    main .no-drama .video h2 {
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 900;
+      font-size: 3.5em; }
+    main .no-drama .video h3 {
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2em;
+      font-weight: 400; }
+  main .no-drama .pros {
+    padding: 5%;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr;
+    grid-column-gap: 5%; }
+    main .no-drama .pros i {
+      color: #f68773;
+      padding-top: 50%; }
+    main .no-drama .pros h3 {
+      font-size: small;
+      font-weight: 500;
+      margin-bottom: 0; }
+    main .no-drama .pros p {
+      font-size: small;
+      margin-top: 0; }
+
 /*# sourceMappingURL=style.css.map */
