@@ -1,0 +1,31 @@
+Header {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #F2EDE9;
+    
+    .menu {
+        display: flex;
+        padding: 2.5%;
+        
+        img {
+            width: 25%;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .input {
+            display: none;
+        }
+
+        .user {
+            display: flex;
+            justify-content: flex-end;
+                
+            img {
+                width: 8%;
+                padding: 4%;
+            }
+        }
+    }
+}

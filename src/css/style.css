@@ -1,0 +1,20 @@
+Header {
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #F2EDE9; }
+  Header .menu {
+    display: flex;
+    padding: 2.5%; }
+    Header .menu img {
+      width: 25%; }
+    Header .menu nav {
+      display: none; }
+    Header .menu .input {
+      display: none; }
+    Header .menu .user {
+      display: flex;
+      justify-content: flex-end; }
+      Header .menu .user img {
+        width: 8%;
+        padding: 4%; }
+
+/*# sourceMappingURL=style.css.map */
