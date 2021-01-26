@@ -10,6 +10,18 @@ body {
   color: #222;
 }
 
+h4 {
+  font-size: 1em;
+  font-weight: 200;
+  color: #999;
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #222;
+}
+
 header {
   display: flex;
   width: 100vw;
@@ -28,27 +40,16 @@ main {
 
 .homepage, .top-sellers, .new-arrival, .deal-day, .latest-news, .keep-connected, .images {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   width: 100%;
   height: auto;
 }
 
-.homepage {
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
 .homepage h2 {
   font-size: 2.5em;
   margin: 0.5em 0;
-}
-.homepage h4 {
-  font-size: 1em;
-  font-weight: 200;
-}
-.homepage a {
-  text-transform: uppercase;
-  font-size: 1em;
-  color: #222;
 }
 
 .winter, .hairband, .hairband-2, .corduroy {
@@ -102,6 +103,122 @@ main {
 .corduroy {
   background: no-repeat url(../img/homepage/banner_h1_3.jpg) left;
   text-align: right;
+}
+
+.top-sellers {
+  align-items: start;
+  padding: 5em 1em;
+}
+.top-sellers article {
+  width: 100vw;
+  height: auto;
+  margin: 1.5em 0;
+}
+.top-sellers article h4 {
+  margin: 1em 0;
+}
+.top-sellers h3 {
+  font-size: 1.5em;
+}
+
+.bag img, .glasses img {
+  width: calc(75vw - 2em);
+  height: auto;
+}
+
+.blouse img, .shoes img {
+  width: calc(100vw - 2em);
+  height: auto;
+}
+
+.new-arrival {
+  align-items: start;
+  padding: 1em;
+}
+.new-arrival h2 {
+  margin-bottom: 0.2em;
+}
+.new-arrival h4 {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.2em;
+}
+.new-arrival h5 {
+  display: block;
+  height: 2.5em;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+.new-arrival ul {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+.new-arrival li {
+  display: inline-block;
+  color: #999;
+  margin-right: 2em;
+}
+.new-arrival li:nth-child(1) {
+  color: #222;
+}
+.new-arrival a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 1em;
+  margin: 2em 0;
+}
+
+.new-arrival-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 1em;
+  row-gap: 1em;
+}
+.new-arrival-grid article img {
+  width: calc(50vw - 1.5em);
+  height: calc(50vw - 1.5em);
+}
+.new-arrival-grid article i {
+  font-size: 0.8em;
+  color: #f68773;
+  margin-bottom: 1em;
+}
+.new-arrival-grid article .grey {
+  color: #999;
+}
+
+.backpack {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+
+.t-shirt {
+  grid-column: 2/span 1;
+  grid-row: 1/span 1;
+}
+
+.t-shirt-2 {
+  grid-column: 1/span 1;
+  grid-row: 2/span 1;
+}
+
+.sweater {
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+}
+
+.jumpsuit {
+  grid-column: 1/span 1;
+  grid-row: 3/span 1;
+}
+
+.shoes {
+  grid-column: 2/span 1;
+  grid-row: 3/span 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

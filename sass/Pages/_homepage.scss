@@ -10,27 +10,18 @@ main {
 }
 .homepage, .top-sellers, .new-arrival, .deal-day, .latest-news, .keep-connected, .images {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
   width: 100%;
   height: auto;
 }
 
 // Section 1 - Homepage
 .homepage {
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
   h2 {
     font-size: 2.5em;
     margin: .5em 0;
-  }
-  h4 {
-    font-size: 1em;
-    font-weight: 200;
-  }
-  a {
-    text-transform: uppercase;
-    font-size: 1em;
-    color: $primary-color;
   }
 }
 .winter, .hairband, .hairband-2, .corduroy {
@@ -79,4 +70,119 @@ main {
 .corduroy {
   background: no-repeat url(../img/homepage/banner_h1_3.jpg) left;
   text-align: right;
+}
+
+// Section 2 - Top Sellers
+.top-sellers {
+  align-items: start;
+  padding: 5em 1em;
+  article {
+    width: 100vw;
+    height: auto;
+    margin: 1.5em 0;
+    h4 {
+      margin: 1em 0;
+    }
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+}
+.bag, .glasses {
+  img {
+    width: calc(75vw - 2em);
+    height: auto;
+  }
+}
+.blouse, .shoes {
+  img {
+    width: calc(100vw - 2em);
+    height: auto;
+  }
+}
+
+// Section 3 - New Arrival
+.new-arrival {
+  align-items: start;
+  padding: 1em;
+  h2 {
+    margin-bottom: .2em;
+  }
+  h4 {
+    display: block;
+    width: 100%;
+    margin-bottom: .2em;
+  }
+  h5 {
+    display: block;
+    height: 2.5em;
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-bottom: .5em;
+  }
+  ul {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+  li {
+    display: inline-block;
+    color: $secondary-color;
+    margin-right: 2em;
+  }
+  li:nth-child(1){
+    color: $primary-color;
+  }
+  a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    margin: 2em 0;
+  }
+}
+.new-arrival-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 1em;
+  row-gap: 1em;
+  article {
+    img {
+      width: calc(50vw - 1.5em);
+      height: calc(50vw - 1.5em);
+    }
+    i {
+      font-size: .8em;
+      color: $tertiary-color;
+      margin-bottom: 1em;
+    }
+    .grey {
+      color: $secondary-color;
+    }
+  }
+}
+.backpack {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.t-shirt {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+.t-shirt-2 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+.sweater {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+.jumpsuit {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+.shoes {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
 }
