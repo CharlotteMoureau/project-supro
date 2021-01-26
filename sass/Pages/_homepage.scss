@@ -19,15 +19,22 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  h2 {
+    font-size: 4em;
+  }
 }
 .winter, .hairband, .hairband-2, .corduroy {
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .winter {
   height: 90vh;
   background: no-repeat url(../img/homepage/sl3-1.jpg) top;
   background-size: 400%;
+  text-align: center;
 }
 .hairband, .hairband-2, .corduroy {
   height: 40vh;
@@ -44,9 +51,6 @@ main {
 }
 .winter, .hairband-2 {
   h2 {
-    color: ;
+    color: $quinary-color;
   }
-}
-.hairband, .corduroy {
-
 }
