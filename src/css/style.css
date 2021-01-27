@@ -39,10 +39,17 @@ Header {
     padding-right: 5%;
     margin-top: 15%;
     margin-bottom: 10%; }
-    .about .about-us section .co-founder .quote p {
-      color: #222;
-      font-size: larger;
-      line-height: 1.25em; }
+    .about .about-us section .co-founder .quote {
+      position: relative;
+      height: 100px; }
+      .about .about-us section .co-founder .quote img {
+        width: 10%;
+        position: absolute; }
+      .about .about-us section .co-founder .quote p {
+        color: #222;
+        font-size: larger;
+        line-height: 1.25em;
+        position: absolute; }
     .about .about-us section .co-founder h3 {
       color: #f68773;
       font-size: small; }
@@ -162,21 +169,35 @@ footer {
   font-size: small;
   padding-left: 5%;
   padding-right: 5%; }
-  footer .footer {
+  footer .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px; }
-    footer .footer h3 {
+    footer .grid h3 {
       font-weight: 600; }
-    footer .footer ul {
+    footer .grid ul {
       list-style: none;
       padding: 0;
       padding-top: 5%; }
-      footer .footer ul li {
+      footer .grid ul li {
         color: #999;
         padding-top: 10%;
         font-size: medium; }
-  footer .currency {
-    display: none; }
+  footer .propper {
+    padding-top: 20%;
+    color: #999; }
+    footer .propper p {
+      font-size: medium; }
+      footer .propper p span {
+        color: #222;
+        font-weight: 600; }
+    footer .propper h2 {
+      font-size: large;
+      display: inline-block;
+      padding-right: 10%;
+      font-weight: 400; }
+
+.shop .not-mobile {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

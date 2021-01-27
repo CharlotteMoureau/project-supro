@@ -8,7 +8,7 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
     
-    .footer {
+    .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 30px;
@@ -30,7 +30,24 @@ footer {
         }
     }
 
-    .currency {
-        display: none;
+    .propper {
+        padding-top: 20%;
+        color: $secondary-color;
+
+        p {
+            font-size: medium;
+
+            span {
+                color: $primary-color;
+                font-weight: 600;
+            }
+        }
+        
+        h2 {
+            font-size: large;
+            display: inline-block;
+            padding-right: 10%;
+            font-weight: 400;
+        }
     }
 }
