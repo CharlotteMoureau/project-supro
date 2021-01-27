@@ -12,12 +12,13 @@
 
         h1 {
             font-size: 2.25em;
-            margin-bottom: 0;
+            font-weight: 600;
         }
 
         h2 {
             margin-top: 5%;
-            font-size: 0.9em;
+            margin-bottom: 5%;
+            font-size: 0.8em;
             font-weight: 500;
             word-spacing: 15px;
         }
@@ -56,7 +57,7 @@
             position: relative;
 
             img {
-                width: 100%;
+                width: 90%;
                 top: 0;
                 left: 0;
             }
@@ -72,7 +73,8 @@
 
             h3 {
                 font-weight: 400;
-                font-size: 0.9em;
+                font-size: 0.88em;
+                margin-top: 5%;
                 margin-bottom: 6%;
             }
 
@@ -85,7 +87,7 @@
 
             .stars {
                 color: $tertiary-color;
-                font-size: small;
+                font-size: 0.7em;
 
                 span {
                     color: $secondary-color;
@@ -120,11 +122,12 @@
 
     .discover {
         text-align: center;
-        font-size: small;
+        font-size: 0.7em;
         font-weight: 600;
         text-decoration: 2px underline;
         text-underline-offset: 40%;
         margin-bottom: 25%;
+        margin-top: 5%;
     }
 
     .nav {
@@ -133,15 +136,16 @@
         h2 {
             color: $primary-color;
             font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 5%;
+            margin-top: 5%;
         }
 
         ul {
-            list-style: none;
-            padding: 0;
             padding-top: 5%;
 
             li {
-                padding-bottom: 3.5%;
+                padding-bottom: 5%;
                 font-size: 0.8em;
             }
         }
@@ -158,15 +162,14 @@
         .color {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            row-gap: 15px;
+            margin-top: 5%;
             
             .color-dot {
                 
-                p {
-                    padding-bottom: 0;
-                }
-
                 i {
                     padding-right: 5%;
+                    padding-bottom: 5%;
                 }
             }
             
@@ -175,11 +178,6 @@
                 
                 .fa-check-square {
                     color: $primary-color;
-                    margin-top: 8%;
-                }
-
-                .fa-square {
-                    margin-top: 8%;
                 }
             }
             
@@ -215,13 +213,14 @@
         .small-products {
                                    
             h2 {
-                margin-top: 0;
+                margin-top: 10%;
             }
 
             .three {
                 display: grid;
                 grid-template-columns: 1fr 3fr;
                 column-gap: 5px;
+                row-gap: 15px;
                 margin-bottom: 35%;
 
                 img {
@@ -230,14 +229,15 @@
 
                 h3 {
                     color: $primary-color;
-                    margin-top: 0;
                     margin-bottom: 4%;
                     font-size: small;
+                    font-weight: 600;
                 }
 
                 .stars {
                     color: $tertiary-color;
                     font-size: x-small;
+                    margin-bottom: 5%;
 
                     span {
                         color: $secondary-color;
