@@ -17,62 +17,62 @@ Header {
         width: 8%;
         padding: 4%; }
 
-main {
+.about {
   font-family: 'Roboto', sans-serif;
   color: #222;
   margin-top: 20%;
   font-size: medium; }
-  main .about-us p {
+  .about .about-us p {
     color: #999; }
-  main .about-us section img {
+  .about .about-us section img {
     width: 100%; }
-  main .about-us section p {
+  .about .about-us section p {
     font-size: 80%;
     line-height: 2em; }
-  main .about-us section .description {
+  .about .about-us section .description {
     padding-left: 8%;
     padding-right: 8%; }
-    main .about-us section .description h1 {
+    .about .about-us section .description h1 {
       color: #f68773; }
-  main .about-us section .co-founder {
+  .about .about-us section .co-founder {
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 15%;
     margin-bottom: 10%; }
-    main .about-us section .co-founder .quote p {
+    .about .about-us section .co-founder .quote p {
       color: #222;
       font-size: larger;
       line-height: 1.25em; }
-    main .about-us section .co-founder h3 {
+    .about .about-us section .co-founder h3 {
       color: #f68773;
       font-size: small; }
-    main .about-us section .co-founder h2 {
+    .about .about-us section .co-founder h2 {
       margin-top: 0;
       padding-bottom: 5%;
       font-weight: 1em;
       font-size: large; }
-    main .about-us section .co-founder p {
+    .about .about-us section .co-founder p {
       line-height: 1.5em; }
-  main .about-us section .big-moments {
+  .about .about-us section .big-moments {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 10%;
     padding-bottom: 15%; }
-    main .about-us section .big-moments .timeline h2 {
+    .about .about-us section .big-moments .timeline h2 {
       margin-bottom: 0;
       padding-top: 5%; }
-    main .about-us section .big-moments .timeline h3 {
+    .about .about-us section .big-moments .timeline h3 {
       font-size: x-large;
       margin-bottom: 0; }
-    main .about-us section .big-moments .timeline p {
+    .about .about-us section .big-moments .timeline p {
       font-size: 0.9em; }
-  main .no-drama {
+  .about .no-drama {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 15%; }
-    main .no-drama p {
+    .about .no-drama p {
       color: #999; }
-    main .no-drama .video {
+    .about .no-drama .video {
       position: relative;
       height: 330px;
       text-align: center;
@@ -80,71 +80,71 @@ main {
       background-position: center center;
       background-repeat: no-repeat;
       background-image: url("/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg"); }
-      main .no-drama .video .play, main .no-drama .video h2, main .no-drama .video h3 {
+      .about .no-drama .video .play, .about .no-drama .video h2, .about .no-drama .video h3 {
         position: absolute;
         color: #fff;
         width: 100%; }
-      main .no-drama .video .play {
+      .about .no-drama .video .play {
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 20%; }
-      main .no-drama .video h2 {
+      .about .no-drama .video h2 {
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-weight: 900;
         font-size: 3.5em; }
-      main .no-drama .video h3 {
+      .about .no-drama .video h3 {
         top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 2em;
         font-weight: 400; }
-    main .no-drama .pros {
+    .about .no-drama .pros {
       padding: 5%;
       display: grid;
       grid-template-columns: 1fr 4fr 1fr 4fr;
       grid-column-gap: 5%; }
-      main .no-drama .pros i {
+      .about .no-drama .pros i {
         color: #f68773;
         padding-top: 50%; }
-      main .no-drama .pros h3 {
+      .about .no-drama .pros h3 {
         font-size: small;
         font-weight: 500;
         margin-bottom: 0; }
-      main .no-drama .pros p {
+      .about .no-drama .pros p {
         font-size: small;
         margin-top: 0; }
-    main .no-drama .technology h2 {
+    .about .no-drama .technology h2 {
       text-align: center;
       font-weight: 400; }
-    main .no-drama .technology p {
+    .about .no-drama .technology p {
       font-size: small;
       line-height: 1.5em; }
-  main .members {
+  .about .members {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 30%; }
-    main .members p {
+    .about .members p {
       color: #999;
       font-size: small;
       margin-top: 0; }
-    main .members h2 {
+    .about .members h2 {
       text-align: center;
       font-weight: 500; }
-    main .members .people {
+    .about .members .people {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       grid-column-gap: 30px; }
-      main .members .people img {
+      .about .members .people img {
         width: 100%; }
-      main .members .people h3 {
+      .about .members .people h3 {
         font-size: medium;
         line-height: 1.5em;
         margin: 0; }
-  main .brands {
+  .about .brands {
     padding-left: 5%;
     padding-right: 5%;
     display: grid;
@@ -152,7 +152,7 @@ main {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     align-items: center; }
-    main .brands img {
+    .about .brands img {
       width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
