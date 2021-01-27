@@ -16,6 +16,12 @@ main {
   flex-flow: column;
   width: 100%;
   height: auto;
+  @media (min-width: 640px) {
+
+  }
+  @media (min-width: 1008px) {
+
+  }
 }
 
 // Section 1 - Homepage
@@ -35,6 +41,9 @@ main {
 .hairband, .hairband-2, .corduroy {
   height: 40vh;
   background-size: cover;
+  @media (min-width: 640px) {
+    height: 33.33vh;
+  }
 }
 .winter, .hairband-2 {
   align-items: center;
@@ -61,15 +70,21 @@ main {
   h2 {
     font-size: 4em;
   }
+  @media (min-width: 640px) {
+    height: 90vh;
+  }
 }
 .hairband {
   background: no-repeat url(../img/homepage/banner_h1_1.jpg) right center;
+  background-size: cover;
 }
 .hairband-2 {
   background: no-repeat url(../img/homepage/banner_h1_2.jpg) center;
+  background-size: cover;
 }
 .corduroy {
   background: no-repeat url(../img/homepage/banner_h1_3.jpg) left;
+  background-size: cover;
   text-align: right;
 }
 
