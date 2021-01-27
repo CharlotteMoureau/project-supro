@@ -1,5 +1,6 @@
 // Homepage
 
+// Main
 main {
   display: flex;
   justify-content: center;
@@ -54,9 +55,9 @@ main {
   }
 }
 .winter {
-  height: 90vh;
+  height: 95vh;
   background: no-repeat url(../img/homepage/sl3-1.jpg) center;
-  background-size: 400%;
+  background-size: cover;
   h2 {
     font-size: 4em;
   }
@@ -312,9 +313,4 @@ main {
     width: 100%;
     height: 100%;
   }
-}
-
-// Footer
-footer {
-  height: 50vh;
 }
