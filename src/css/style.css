@@ -155,4 +155,28 @@ Header {
     .about .brands img {
       width: 100%; }
 
+footer {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  margin-top: 20%;
+  font-size: small;
+  padding-left: 5%;
+  padding-right: 5%; }
+  footer .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px; }
+    footer .footer h3 {
+      font-weight: 600; }
+    footer .footer ul {
+      list-style: none;
+      padding: 0;
+      padding-top: 5%; }
+      footer .footer ul li {
+        color: #999;
+        padding-top: 10%;
+        font-size: medium; }
+  footer .currency {
+    display: none; }
+
 /*# sourceMappingURL=style.css.map */

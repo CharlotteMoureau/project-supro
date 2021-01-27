@@ -1,6 +1,8 @@
+@import 'variables';
+
 Header {
     font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid #F2EDE9;
+    border-bottom: 1px solid $quaternary-color;
     
     .menu {
         display: flex;
