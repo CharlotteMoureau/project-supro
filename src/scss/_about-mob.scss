@@ -45,6 +45,8 @@
                     img {
                         width: 10%;
                         position: absolute;
+                        margin-top: 2%;
+                        filter: invert(63%) sepia(0%) saturate(1136%) hue-rotate(138deg) brightness(97%) contrast(94%);
                     }
 
                     p {

@@ -44,7 +44,9 @@ Header {
       height: 100px; }
       .about .about-us section .co-founder .quote img {
         width: 10%;
-        position: absolute; }
+        position: absolute;
+        margin-top: 2%;
+        filter: invert(63%) sepia(0%) saturate(1136%) hue-rotate(138deg) brightness(97%) contrast(94%); }
       .about .about-us section .co-founder .quote p {
         color: #222;
         font-size: larger;
@@ -197,7 +199,150 @@ footer {
       padding-right: 10%;
       font-weight: 400; }
 
-.shop .not-mobile {
-  display: none; }
+.shop {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  margin-top: 15%;
+  font-size: medium;
+  padding-left: 3%;
+  padding-right: 3%; }
+  .shop .top h1 {
+    font-size: 2.25em;
+    margin-bottom: 0; }
+  .shop .top h2 {
+    margin-top: 5%;
+    font-size: 0.9em;
+    font-weight: 500;
+    word-spacing: 15px; }
+  .shop .top span {
+    color: #999; }
+  .shop .top .filter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .shop .top .filter p {
+      margin-top: 5%;
+      margin-bottom: 20%;
+      font-weight: 500; }
+    .shop .top .filter img {
+      width: 10%;
+      float: right; }
+  .shop .top .not-mobile {
+    display: none; }
+  .shop .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px; }
+    .shop .products div {
+      position: relative; }
+      .shop .products div img {
+        width: 100%;
+        top: 0;
+        left: 0; }
+      .shop .products div .hidden {
+        opacity: 0;
+        position: absolute; }
+        .shop .products div .hidden:hover {
+          opacity: 1; }
+      .shop .products div h3 {
+        font-weight: 400;
+        font-size: 0.9em;
+        margin-bottom: 6%; }
+      .shop .products div p {
+        color: #999;
+        margin-top: 6%;
+        font-size: small;
+        margin-bottom: 25%; }
+      .shop .products div .stars {
+        color: #f68773;
+        font-size: small; }
+        .shop .products div .stars span {
+          color: #999; }
+      .shop .products div .promo, .shop .products div .hot, .shop .products div .sale {
+        width: 30px;
+        padding: 5px;
+        border-radius: 8%;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%, 50%); }
+      .shop .products div .hot {
+        background-color: #ff1d3b; }
+      .shop .products div .sale {
+        background-color: #f68773; }
+  .shop .discover {
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+    text-decoration: 2px underline;
+    text-underline-offset: 40%;
+    margin-bottom: 25%; }
+  .shop .nav {
+    color: #999; }
+    .shop .nav h2 {
+      color: #222;
+      font-size: 1.4em; }
+    .shop .nav ul {
+      list-style: none;
+      padding: 0;
+      padding-top: 5%; }
+      .shop .nav ul li {
+        padding-bottom: 3.5%;
+        font-size: 0.8em; }
+    .shop .nav img {
+      width: 100%; }
+    .shop .nav p {
+      font-size: small;
+      padding-bottom: 5%; }
+    .shop .nav .color {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      .shop .nav .color .color-dot p {
+        padding-bottom: 0; }
+      .shop .nav .color .color-dot i {
+        padding-right: 5%; }
+      .shop .nav .color .input {
+        text-align: right; }
+        .shop .nav .color .input .fa-check-square {
+          color: #222;
+          margin-top: 8%; }
+        .shop .nav .color .input .fa-square {
+          margin-top: 8%; }
+      .shop .nav .color .black {
+        color: #222; }
+      .shop .nav .color .blue {
+        color: #70849d; }
+      .shop .nav .color .gold {
+        color: #cc9900; }
+      .shop .nav .color .nude {
+        color: #cfa58f; }
+      .shop .nav .color .orange {
+        color: #cc6601; }
+      .shop .nav .color .red {
+        color: #990100; }
+      .shop .nav .color span {
+        color: #222; }
+    .shop .nav .small-products h2 {
+      margin-top: 0; }
+    .shop .nav .small-products .three {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      column-gap: 5px;
+      margin-bottom: 35%; }
+      .shop .nav .small-products .three img {
+        width: 80%; }
+      .shop .nav .small-products .three h3 {
+        color: #222;
+        margin-top: 0;
+        margin-bottom: 4%;
+        font-size: small; }
+      .shop .nav .small-products .three .stars {
+        color: #f68773;
+        font-size: x-small; }
+        .shop .nav .small-products .three .stars span {
+          color: #999; }
 
 /*# sourceMappingURL=style.css.map */
