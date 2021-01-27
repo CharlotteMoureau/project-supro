@@ -22,6 +22,10 @@ a {
   color: #222;
 }
 
+ul {
+  list-style: none;
+}
+
 header {
   display: flex;
   width: 100vw;
@@ -219,6 +223,88 @@ main {
 .shoes {
   grid-column: 2/span 1;
   grid-row: 3/span 1;
+}
+
+.deal-day {
+  background: no-repeat url(../img/homepage/deals_image.jpg) center left -225vw;
+  height: 70vh;
+  padding: 1em;
+  align-items: start;
+}
+.deal-day h2 {
+  margin-bottom: 0.5em;
+}
+.deal-day h4 {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: 400;
+}
+.deal-day h5 {
+  display: block;
+  padding: 0.5em;
+  background-color: #f68773;
+  color: #fff;
+  margin: 1.5em 0;
+}
+.deal-day ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin-bottom: 5em;
+}
+.deal-day ul li {
+  width: calc(100% / 4);
+  text-align: center;
+  margin: 1em 0.8em;
+}
+.deal-day a {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+}
+
+.latest-news {
+  height: auto;
+  padding: 5em 1em 1em 1em;
+  align-items: start;
+}
+.latest-news h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.latest-news h4 {
+  margin-bottom: 0.5em;
+}
+.latest-news article {
+  width: 100%;
+  height: auto;
+  margin: 2em 0;
+}
+.latest-news article img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+.latest-news article h4 {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1em;
+}
+.latest-news article h5 {
+  font-weight: 400;
+  color: #999;
+  margin-bottom: 0.5em;
+}
+.latest-news article span {
+  font-weight: 600;
+  color: #f68773;
+  margin-right: 1em;
+}
+.latest-news article a {
+  padding-bottom: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
