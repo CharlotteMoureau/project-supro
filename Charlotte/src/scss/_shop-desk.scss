@@ -1,0 +1,134 @@
+@media screen and (min-width: 1008px) {
+    .shop {
+        width: 60%;
+        margin: auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        column-gap: 10%;
+        margin-top: 5%;
+        
+        .big-column {
+            grid-area: 1 / 2 / 2 / 5;
+            
+            h1 {
+               font-size: 3em; 
+            }
+
+            .top {
+                display: grid;
+                grid-template-columns: 2fr 5fr;
+
+                .filter {
+                    display: grid;
+                    grid-template-columns: 1fr 3fr;
+
+                    p {
+                        font-size: 0.9em;
+                    }
+
+
+                    .not-mobile {
+                        display: grid;
+                        grid-template-columns: 1fr 2fr 1fr;
+
+                        .only-desktop {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+
+                            span {
+                                padding-left: 5%;
+                            }
+
+                            img {
+                                width: 35%;
+                                justify-self: end;
+                            }
+                        }
+
+                        .tablet {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+
+                            .fas {
+                                padding-left: 20%;
+                            }
+                        }
+                    }
+                    .not-desktop {
+                        display: none;
+                    }
+                }
+            }
+
+            .products {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .discover {
+                margin-top: 3%;
+                margin-bottom: 20%;
+            }
+        }
+
+        .small-column {
+            grid-area: 1 / 1 / 2 / 2;
+            margin-left: 5%;
+
+            .nav {
+                h2 {
+                    font-size: 1.7em;
+                    margin-bottom: 25%;
+                }
+
+                ul {
+                    padding-bottom: 15%;
+
+                    li {
+                        font-size: medium;
+                        padding-bottom: 8%;
+                    }
+                }
+
+                p {
+                    font-size: medium;
+                    padding-bottom: 25%;
+                }
+            }
+
+            .color {
+                .color-dot {
+
+                    p {
+                        padding-bottom: 10%;
+                        i {
+                            padding-right: 15%;
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            .small-products {
+                .three {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    p {
+                        padding-bottom: 0;
+                        font-size: small;
+                    }
+
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}

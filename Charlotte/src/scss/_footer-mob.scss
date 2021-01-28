@@ -10,7 +10,7 @@ footer {
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 30px;
+        column-gap: 30px;
 
         h3 {
             font-weight: 600;
