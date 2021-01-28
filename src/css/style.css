@@ -1,3 +1,49 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 Header {
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #F2EDE9; }
@@ -17,11 +63,17 @@ Header {
         width: 8%;
         padding: 4%; }
 
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  header .menu .user {
+    margin-right: 2%; }
+    header .menu .user img {
+      width: 3%;
+      padding: 2%; } }
+
 .about {
   font-family: 'Roboto', sans-serif;
   color: #222;
-  margin-top: 20%;
-  font-size: medium; }
+  margin-top: 15%; }
   .about .about-us p {
     color: #999; }
   .about .about-us section img {
@@ -33,7 +85,14 @@ Header {
     padding-left: 8%;
     padding-right: 8%; }
     .about .about-us section .description h1 {
-      color: #f68773; }
+      color: #f68773;
+      margin-top: 10%;
+      font-weight: 600;
+      font-size: 0.9em; }
+    .about .about-us section .description h2 {
+      margin-top: 10%;
+      font-weight: 600;
+      font-size: 1.6em; }
   .about .about-us section .co-founder {
     padding-left: 5%;
     padding-right: 5%;
@@ -43,42 +102,51 @@ Header {
       position: relative;
       height: 100px; }
       .about .about-us section .co-founder .quote img {
-        width: 10%;
+        width: 15%;
         position: absolute;
-        margin-top: 2%;
-        filter: invert(63%) sepia(0%) saturate(1136%) hue-rotate(138deg) brightness(97%) contrast(94%); }
+        margin-top: 3%;
+        filter: invert(100%) sepia(0%) saturate(3113%) hue-rotate(5deg) brightness(84%) contrast(79%); }
       .about .about-us section .co-founder .quote p {
         color: #222;
         font-size: larger;
         line-height: 1.25em;
-        position: absolute; }
+        position: absolute;
+        font-style: italic;
+        margin-top: 10%; }
     .about .about-us section .co-founder h3 {
       color: #f68773;
-      font-size: small; }
+      font-size: small;
+      margin-top: 10%;
+      font-weight: 600; }
     .about .about-us section .co-founder h2 {
-      margin-top: 0;
-      padding-bottom: 5%;
       font-weight: 1em;
-      font-size: large; }
+      font-size: large;
+      margin-top: 5%;
+      margin-bottom: 10%;
+      font-weight: 500;
+      font-style: italic; }
     .about .about-us section .co-founder p {
       line-height: 1.5em; }
   .about .about-us section .big-moments {
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 10%;
-    padding-bottom: 15%; }
-    .about .about-us section .big-moments .timeline h2 {
-      margin-bottom: 0;
-      padding-top: 5%; }
+    margin-top: 20%;
+    margin-bottom: 20%; }
+    .about .about-us section .big-moments h2 {
+      font-size: x-large;
+      font-weight: 600;
+      margin-bottom: 5%; }
     .about .about-us section .big-moments .timeline h3 {
       font-size: x-large;
-      margin-bottom: 0; }
+      font-weight: 600;
+      margin-top: 10%;
+      margin-bottom: 5%; }
     .about .about-us section .big-moments .timeline p {
       font-size: 0.9em; }
   .about .no-drama {
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 15%; }
+    padding-bottom: 20%; }
     .about .no-drama p {
       color: #999; }
     .about .no-drama .video {
@@ -101,58 +169,67 @@ Header {
       .about .no-drama .video h2 {
         top: 35%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 20%);
         font-weight: 900;
         font-size: 3.5em; }
       .about .no-drama .video h3 {
         top: 20%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 30%);
         font-size: 2em;
         font-weight: 400; }
     .about .no-drama .pros {
-      padding: 5%;
+      margin-top: 15%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 50%;
       display: grid;
       grid-template-columns: 1fr 4fr 1fr 4fr;
-      grid-column-gap: 5%; }
+      row-gap: 25px; }
       .about .no-drama .pros i {
         color: #f68773;
-        padding-top: 50%; }
+        padding-top: 50%;
+        padding: 5%; }
       .about .no-drama .pros h3 {
         font-size: small;
         font-weight: 500;
-        margin-bottom: 0; }
+        margin-bottom: 5%; }
       .about .no-drama .pros p {
         font-size: small;
-        margin-top: 0; }
+        margin-top: 5%; }
     .about .no-drama .technology h2 {
       text-align: center;
-      font-weight: 400; }
+      font-weight: 500;
+      font-size: 1.6em;
+      margin-bottom: 10%; }
     .about .no-drama .technology p {
-      font-size: small;
-      line-height: 1.5em; }
+      font-size: 0.85em;
+      line-height: 1.5em;
+      padding-bottom: 4%; }
   .about .members {
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 30%; }
+    padding-bottom: 40%; }
     .about .members p {
       color: #999;
       font-size: small;
       margin-top: 0; }
     .about .members h2 {
       text-align: center;
-      font-weight: 500; }
+      font-weight: 600;
+      font-size: x-large; }
     .about .members .people {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
       grid-column-gap: 30px; }
       .about .members .people img {
-        width: 100%; }
+        width: 100%;
+        margin-top: 20%;
+        margin-bottom: 10%; }
       .about .members .people h3 {
         font-size: medium;
         line-height: 1.5em;
-        margin: 0; }
+        font-weight: 600; }
   .about .brands {
     padding-left: 5%;
     padding-right: 5%;
@@ -162,7 +239,8 @@ Header {
     grid-row-gap: 20px;
     align-items: center; }
     .about .brands img {
-      width: 100%; }
+      width: 100%;
+      filter: invert(100%) sepia(0%) saturate(3113%) hue-rotate(5deg) brightness(84%) contrast(79%); }
 
 footer {
   font-family: 'Roboto', sans-serif;
@@ -176,20 +254,24 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 30px; }
     footer .grid h3 {
-      font-weight: 600; }
+      font-weight: 600;
+      font-size: medium;
+      margin-bottom: 20%;
+      margin-top: 20%; }
     footer .grid ul {
       list-style: none;
-      padding: 0;
       padding-top: 5%; }
       footer .grid ul li {
         color: #999;
         padding-top: 10%;
         font-size: medium; }
   footer .propper {
-    padding-top: 20%;
+    border-top: 1px solid #F2EDE9;
+    margin-top: 20%;
     color: #999; }
     footer .propper p {
-      font-size: medium; }
+      font-size: medium;
+      margin-top: 10%; }
       footer .propper p span {
         color: #222;
         font-weight: 600; }
@@ -197,7 +279,8 @@ footer {
       font-size: large;
       display: inline-block;
       padding-right: 10%;
-      font-weight: 400; }
+      margin-top: 10%;
+      font-weight: 500; }
 
 .shop {
   font-family: 'Roboto', sans-serif;
@@ -208,10 +291,11 @@ footer {
   padding-right: 3%; }
   .shop .top h1 {
     font-size: 2.25em;
-    margin-bottom: 0; }
+    font-weight: 600; }
   .shop .top h2 {
     margin-top: 5%;
-    font-size: 0.9em;
+    margin-bottom: 5%;
+    font-size: 0.8em;
     font-weight: 500;
     word-spacing: 15px; }
   .shop .top span {
@@ -235,7 +319,7 @@ footer {
     .shop .products div {
       position: relative; }
       .shop .products div img {
-        width: 100%;
+        width: 90%;
         top: 0;
         left: 0; }
       .shop .products div .hidden {
@@ -245,7 +329,8 @@ footer {
           opacity: 1; }
       .shop .products div h3 {
         font-weight: 400;
-        font-size: 0.9em;
+        font-size: 0.88em;
+        margin-top: 5%;
         margin-bottom: 6%; }
       .shop .products div p {
         color: #999;
@@ -254,7 +339,7 @@ footer {
         margin-bottom: 25%; }
       .shop .products div .stars {
         color: #f68773;
-        font-size: small; }
+        font-size: 0.7em; }
         .shop .products div .stars span {
           color: #999; }
       .shop .products div .promo, .shop .products div .hot, .shop .products div .sale {
@@ -275,22 +360,24 @@ footer {
         background-color: #f68773; }
   .shop .discover {
     text-align: center;
-    font-size: small;
+    font-size: 0.7em;
     font-weight: 600;
     text-decoration: 2px underline;
     text-underline-offset: 40%;
-    margin-bottom: 25%; }
+    margin-bottom: 25%;
+    margin-top: 5%; }
   .shop .nav {
     color: #999; }
     .shop .nav h2 {
       color: #222;
-      font-size: 1.4em; }
+      font-size: 1.4em;
+      font-weight: 600;
+      margin-bottom: 5%;
+      margin-top: 5%; }
     .shop .nav ul {
-      list-style: none;
-      padding: 0;
       padding-top: 5%; }
       .shop .nav ul li {
-        padding-bottom: 3.5%;
+        padding-bottom: 5%;
         font-size: 0.8em; }
     .shop .nav img {
       width: 100%; }
@@ -299,18 +386,16 @@ footer {
       padding-bottom: 5%; }
     .shop .nav .color {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); }
-      .shop .nav .color .color-dot p {
-        padding-bottom: 0; }
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 15px;
+      margin-top: 5%; }
       .shop .nav .color .color-dot i {
-        padding-right: 5%; }
+        padding-right: 5%;
+        padding-bottom: 5%; }
       .shop .nav .color .input {
         text-align: right; }
         .shop .nav .color .input .fa-check-square {
-          color: #222;
-          margin-top: 8%; }
-        .shop .nav .color .input .fa-square {
-          margin-top: 8%; }
+          color: #222; }
       .shop .nav .color .black {
         color: #222; }
       .shop .nav .color .blue {
@@ -326,22 +411,24 @@ footer {
       .shop .nav .color span {
         color: #222; }
     .shop .nav .small-products h2 {
-      margin-top: 0; }
+      margin-top: 10%; }
     .shop .nav .small-products .three {
       display: grid;
       grid-template-columns: 1fr 3fr;
       column-gap: 5px;
+      row-gap: 15px;
       margin-bottom: 35%; }
       .shop .nav .small-products .three img {
         width: 80%; }
       .shop .nav .small-products .three h3 {
         color: #222;
-        margin-top: 0;
         margin-bottom: 4%;
-        font-size: small; }
+        font-size: small;
+        font-weight: 600; }
       .shop .nav .small-products .three .stars {
         color: #f68773;
-        font-size: x-small; }
+        font-size: x-small;
+        margin-bottom: 5%; }
         .shop .nav .small-products .three .stars span {
           color: #999; }
 
