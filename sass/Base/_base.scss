@@ -1,0 +1,35 @@
+//Base
+
+@media (min-width: 640px) {
+
+}
+@media (min-width: 1008px) {
+
+}
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: $primary-color;
+}
+h4 {
+    font-size: 1em;
+    font-weight: 200;
+    color: $secondary-color;
+}
+a {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: $primary-color;
+}
+ul {
+    list-style: none;
+}
+

@@ -1,0 +1,26 @@
+//Header
+
+Header {
+  border-bottom: 1px solid $quaternary-color;
+  .menu {
+    display: flex;
+    padding: 2.5%;
+    img {
+      width: 25%;
+    }
+    nav {
+      display: none;
+    }
+    .input {
+      display: none;
+    }
+    .user {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        width: 8%;
+        margin: 4%;
+      }
+    }
+  }
+}

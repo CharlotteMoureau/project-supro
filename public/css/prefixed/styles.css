@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*
+    @include mobile-only{
+        //Placer les contenu ici
+    }
+*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  font-weight: 400;
+  list-style: none;
+  background-color: coral;
+}
+@media screen and (max-width: ) {
+  body {
+    background-color: #49bd1b;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlcy5jc3MiLCIuLi8uLi8uLi9zYXNzL1V0aWxzL19taXhpbnMuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvQmFzZS9fYmFzZS5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9VdGlscy9fdmFyaWFibGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FDT2hCOzs7O0NBQUE7QUNMQTtFQUNJLDhCQUFBO1VBQUEsc0JBQUE7RUFDQSx1QkFBQTtBRktKOztBRUZBO0VBQ0ksU0FBQTtFQUNBLFVBQUE7RUFDQSw4Q0FBQTtFQUNBLGNBQUE7RUFDQSxnQkFBQTtFQUNBLGdCQUFBO0VBQ0EsdUJDVmE7QUhlakI7QUNoQkk7RUNJSjtJQVVRLHlCQUFBO0VGTU47QUFDRiIsImZpbGUiOiJzdHlsZXMuY3NzIn0= */
