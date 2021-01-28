@@ -1,0 +1,24 @@
+{
+  "name": "project-supro",
+  "version": "1.0.0",
+  "description": "https://francoisroyen.github.io/project-supro/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch src/scss -o src/css --source-map true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francoisRoyen/project-supro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francoisRoyen/project-supro/issues"
+  },
+  "homepage": "https://github.com/francoisRoyen/project-supro#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {}
+}
