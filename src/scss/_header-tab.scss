@@ -2,15 +2,30 @@
     header {
         
         .menu {
+            display: grid;
+            grid-template-columns: 7fr 3fr;
+            margin-top: 1%;
+
+            .supro {
+                img {
+                    width: 20%;
+                    padding: 0;
+                }
+            }           
+            
 
             .user {
-                margin-right: 2%; 
-    
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                margin-right: 2%;
+                
                 img {
-                    width: 3%;
-                    padding: 2%;
+                    width: 50%;
+                    padding: 0;
+                    
+                                        
                 }
             }
-        }
+        }  
     }
 }

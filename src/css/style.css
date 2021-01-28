@@ -48,27 +48,50 @@ Header {
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #F2EDE9; }
   Header .menu {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     padding: 2.5%; }
-    Header .menu img {
-      width: 25%; }
+    Header .menu .supro img {
+      width: 60%;
+      padding: 5%; }
     Header .menu nav {
       display: none; }
     Header .menu .input {
       display: none; }
     Header .menu .user {
-      display: flex;
-      justify-content: flex-end; }
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-right: 10%; }
       Header .menu .user img {
-        width: 8%;
-        padding: 4%; }
+        width: 50%;
+        padding: 25%; }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-  header .menu .user {
-    margin-right: 2%; }
-    header .menu .user img {
-      width: 3%;
-      padding: 2%; } }
+  header .menu {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    margin-top: 1%; }
+    header .menu .supro img {
+      width: 20%;
+      padding: 0; }
+    header .menu .user {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-right: 2%; }
+      header .menu .user img {
+        width: 50%;
+        padding: 0; } }
+
+@media screen and (min-width: 1008px) {
+  header {
+    background-color: bisque; }
+    header .menu nav {
+      display: block; }
+      header .menu nav ul {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); }
+    header .menu .input {
+      display: block; } }
 
 footer {
   font-family: 'Roboto', sans-serif;
