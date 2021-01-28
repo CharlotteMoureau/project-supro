@@ -1,0 +1,88 @@
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .shop {
+        margin-top: 8%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+        
+        .big-column {
+            grid-area: 1 / 1 / 2 / 3; 
+
+            .top {
+
+                h1 {
+                    font-size: 2em;
+                }
+
+                h2 {
+                    margin-top: 3%;
+                    margin-bottom: 5%;
+                    font-size: 0.7em;
+                    word-spacing: 10px;
+                }
+            
+                .filter {
+                    display: grid;
+                    grid-template-columns: repeat(9, 1fr);
+
+                    img {
+                        width: 25%;
+                    }
+
+                    p {
+                        font-size: small;
+                        margin-bottom: 10%;
+                    }
+
+                    .found {
+                        grid-column: 1 / span 5;
+                    }
+                                                
+                    .not-mobile {
+                        display: inline;
+                        grid-column: 6 / span 3;
+                        
+                        .only-desktop {
+                            display: none;
+                        }
+                        
+                        .tablet {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            
+                            p {
+                                span {
+                                    i {
+                                        margin-left: 50%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .not-desktop {
+                            grid-column: 9 / span 1;
+
+                        }
+                    }
+                }
+            }
+                    
+            .products {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .discover {
+                margin-bottom: 10%;
+                margin-top: 0;
+            }
+        }
+
+        .small-column {
+            grid-area: 2 / 1 / 3 / 2;
+
+            .nav {
+            }
+        }
+    }
+}
