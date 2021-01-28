@@ -6,14 +6,15 @@ Header {
     
     .menu {
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 4fr 1fr 5fr;
         padding: 2.5%;
+        margin-top: 5%;
         
         .supro {
 
             img {
                 width: 60%;
-                padding: 5%
+                padding-left: 5%
             }
         }
         
@@ -22,18 +23,22 @@ Header {
         }
 
         .input {
-            display: none;
+            img {
+                width: 60%;
+            }
+            input {
+                display: none;
+            }
         }
 
         .user {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            margin-right: 10%;
-                            
+            grid-template-columns: repeat(4, 1fr);
+            margin-right: 4%;
+            
             img {
                 width: 50%;
-                padding: 25%;
-            }
+           }              
         }
     }
 }

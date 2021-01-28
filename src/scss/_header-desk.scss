@@ -3,18 +3,60 @@
         background-color: bisque;
 
         .menu {
-            nav{
-                display: block;
+            display: grid;
+            grid-template-columns: 5fr 17fr 6fr 4fr;
+            margin-top: 0;
+            padding: 0;
 
-                ul {
-                    display: grid;
-                    grid-template-columns: repeat(6, 1fr);
+            .supro {
+
+                img {
+                    width: 30%;
                 }
             }
 
-            .input {
-                display: block;
+            nav{
+                display: grid;
+                grid-template-columns: repeat(17, 1fr);
+
+                div {
+                    grid-area: 1 / 1 / 2 / 10;
+
+                    ul {
+                        display: grid;
+                        grid-template-columns: repeat(6, 1fr);
+                    }
+                }
+
+                
             }
+
+            .input {
+                display: grid;
+                grid-template-columns: 5fr 1fr;
+
+                img {
+                    width: 35%;
+                }
+                input {
+                    display: block;
+                    width: 60%;
+                }
+            }
+
+            .user {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                margin-right: 0;
+                place-content: end;
+                                
+                img {
+                    width: 35%;
+                    padding: 0;
+                    
+               }              
+            }
+
         }
     }
 }

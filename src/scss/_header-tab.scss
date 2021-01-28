@@ -3,8 +3,9 @@
         
         .menu {
             display: grid;
-            grid-template-columns: 7fr 3fr;
+            grid-template-columns: 7fr 1fr 2fr;
             margin-top: 1%;
+            padding-right: 5%;
 
             .supro {
                 img {
@@ -13,16 +14,19 @@
                 }
             }           
             
+            .input {
+                img {
+                    width: 30%;
+                    padding-left: 50%;
+                }
+            }
 
             .user {
                 display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                margin-right: 2%;
-                
+                grid-template-columns: repeat(4, 1fr);
+                                                
                 img {
-                    width: 50%;
-                    padding: 0;
-                    
+                    width: 60%;                  
                                         
                 }
             }
