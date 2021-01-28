@@ -1,0 +1,263 @@
+@import 'variables';
+
+.about {
+    font-family: 'Roboto', sans-serif;
+    color: $primary-color;
+    margin-top: 15%;
+        
+    .about-us {
+
+        p {
+            color: $secondary-color;
+        }
+
+        section {   
+            
+            img {
+                width: 100%;
+            }
+
+            p {
+                font-size: 80%;
+                line-height: 2em;
+            }
+
+            .description {
+                padding-left: 8%;
+                padding-right: 8%;
+
+                h1 {
+                    color: $tertiary-color;
+                    margin-top: 10%;
+                    font-weight: 600;
+                    font-size: 0.9em;
+                }
+
+                h2 {
+                    margin-top: 10%;
+                    font-weight: 600;
+                    font-size: 1.6em;
+                }
+            }
+
+            .co-founder {
+                padding-left: 5%;
+                padding-right: 5%;
+                margin-top: 15%;
+                margin-bottom: 10%;
+
+                .quote {
+                    position: relative;
+                    height: 100px;
+
+                    img {
+                        width: 15%;
+                        position: absolute;
+                        margin-top: 3%;
+                        filter: invert(100%) sepia(0%) saturate(3113%) hue-rotate(5deg) brightness(84%) contrast(79%);
+                    }
+
+                    p {
+                        color: $primary-color;
+                        font-size: larger;
+                        line-height: 1.25em;
+                        position: absolute;
+                        font-style: italic;
+                        margin-top: 10%;
+                    }
+                }
+
+                h3 {
+                    color: $tertiary-color;
+                    font-size: small;
+                    margin-top: 10%;
+                    font-weight: 600;
+                }
+
+                h2 {
+                    font-weight: 1em;
+                    font-size: large;
+                    margin-top: 5%;
+                    margin-bottom: 10%;
+                    font-weight: 500;
+                    font-style: italic;
+                }
+
+                p {
+                    line-height: 1.5em;
+                }
+            }
+
+            .big-moments {
+                padding-left: 5%;
+                padding-right: 5%;
+                margin-top: 20%;
+                margin-bottom: 20%;
+
+                h2 {
+                    font-size: x-large;
+                    font-weight: 600;
+                    margin-bottom: 5%;
+                }
+
+                .timeline {
+
+                    h3 {
+                        font-size: x-large;
+                        font-weight: 600;
+                        margin-top: 10%;
+                        margin-bottom: 5%;
+                    }
+
+                    p {
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    }
+
+    .no-drama {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 20%;
+
+        p {
+            color: $secondary-color;
+        }
+
+        .video {
+            position: relative;
+            height: 330px;
+            text-align: center;
+            background-size: cover; 
+            background-position: center center; 
+            background-repeat: no-repeat; 
+            background-image: url('/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg');
+            
+            
+            .play, h2, h3 {
+                position: absolute;
+                color: $quinary-color;
+                width: 100%;
+            }
+
+            .play {
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20%;
+            }
+
+            h2 {
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, 20%);
+                font-weight: 900;
+                font-size: 3.5em;
+            }
+
+            h3 {
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, 30%);
+                font-size: 2em;
+                font-weight: 400;
+            }
+        }
+
+        .pros {
+            margin-top: 15%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 50%;
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr 4fr;
+            row-gap: 25px;
+            
+            i {
+                color: $tertiary-color;
+                padding-top: 50%;
+                padding: 5%;
+            }
+
+            h3 {
+                font-size: small;
+                font-weight: 500;
+                margin-bottom: 5%;
+            }
+
+            p {
+                font-size: small;
+                margin-top: 5%;
+            }
+        }
+
+        .technology {
+            
+            h2 {
+                text-align: center;
+                font-weight: 500;
+                font-size: 1.6em;
+                margin-bottom: 10%;
+            }
+
+            p {
+                font-size: 0.85em;
+                line-height: 1.5em;
+                padding-bottom: 4%;
+            }
+        }
+    }
+
+    .members {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 40%;
+        
+        p {
+            color: $secondary-color;
+            font-size: small;
+            margin-top: 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 600;
+            font-size: x-large;
+        }
+
+        .people {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 30px;
+
+            img {
+                width: 100%;
+                margin-top: 20%;
+                margin-bottom: 10%;
+            }
+
+            h3 {
+                font-size: medium;
+                line-height: 1.5em;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .brands {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        align-items: center;
+        
+        img {
+            width: 100%;
+            filter: invert(100%) sepia(0%) saturate(3113%) hue-rotate(5deg) brightness(84%) contrast(79%);
+        }
+    }
+}

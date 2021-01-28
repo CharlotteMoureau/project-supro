@@ -1,0 +1,38 @@
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+
+    footer {
+        margin-top: 0;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            
+            h3 {
+                font-size: 0.7em;
+                margin-bottom: 4%;
+            }
+
+            ul {
+                padding-top: 8%;
+
+                li {
+                    font-size: 0.7em;
+                }
+            }
+        }
+
+        .propper {
+            margin-top: 10%;
+
+            p {
+                font-size: small;
+            }
+
+            h2 {
+                font-size: small;
+                margin-top: 4%;
+                margin-bottom: 10%;
+            }
+        }
+    }
+}

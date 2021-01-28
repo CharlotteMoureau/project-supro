@@ -1,0 +1,562 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+Header {
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #F2EDE9; }
+  Header .menu {
+    display: grid;
+    grid-template-columns: 4fr 1fr 5fr;
+    padding: 2.5%;
+    margin-top: 5%; }
+    Header .menu .supro img {
+      width: 60%;
+      padding-left: 5%; }
+    Header .menu nav {
+      display: none; }
+    Header .menu .input img {
+      width: 60%; }
+    Header .menu .input input {
+      display: none; }
+    Header .menu .user {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-right: 4%; }
+      Header .menu .user img {
+        width: 50%; }
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  header .menu {
+    display: grid;
+    grid-template-columns: 7fr 1fr 2fr;
+    margin-top: 1%;
+    padding-right: 5%; }
+    header .menu .supro img {
+      width: 20%;
+      padding: 0; }
+    header .menu .input img {
+      width: 30%;
+      padding-left: 50%; }
+    header .menu .user {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); }
+      header .menu .user img {
+        width: 60%; } }
+
+@media screen and (min-width: 1008px) {
+  header {
+    margin-right: 1%;
+    margin-left: 1%; }
+    header .menu {
+      display: grid;
+      grid-template-columns: 4fr 18fr 6fr 4fr;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      padding: 0; }
+      header .menu .supro img {
+        width: 40%; }
+      header .menu nav {
+        display: grid;
+        grid-template-columns: repeat(17, 1fr); }
+        header .menu nav div {
+          grid-area: 1 / 1 / 2 / 10; }
+          header .menu nav div ul {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); }
+            header .menu nav div ul li {
+              text-align: center; }
+              header .menu nav div ul li a {
+                text-decoration: none;
+                color: #222;
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.9em; }
+      header .menu .input {
+        display: grid;
+        grid-template-columns: 4fr 3fr; }
+        header .menu .input img {
+          width: 12.5%; }
+        header .menu .input input {
+          display: block;
+          width: 70%;
+          border: none; }
+      header .menu .user {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-right: 20%; }
+        header .menu .user img {
+          width: 40%;
+          padding: 0; } }
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  margin-top: 20%;
+  padding-left: 5%;
+  padding-right: 5%; }
+  footer .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px; }
+    footer .grid h3 {
+      font-weight: 600;
+      font-size: medium;
+      margin-bottom: 20%;
+      margin-top: 20%; }
+    footer .grid ul {
+      list-style: none;
+      padding-top: 5%; }
+      footer .grid ul li {
+        color: #999;
+        padding-top: 10%;
+        font-size: medium; }
+  footer .propper {
+    border-top: 1px solid #F2EDE9;
+    margin-top: 20%;
+    color: #999; }
+    footer .propper p {
+      font-size: medium;
+      margin-top: 10%; }
+      footer .propper p span {
+        color: #222;
+        font-weight: 600; }
+    footer .propper h2 {
+      font-size: large;
+      display: inline-block;
+      padding-right: 10%;
+      margin-top: 10%;
+      margin-bottom: 20%;
+      font-weight: 500; }
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  footer {
+    margin-top: 0; }
+    footer .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+      footer .grid h3 {
+        font-size: 0.7em;
+        margin-bottom: 4%; }
+      footer .grid ul {
+        padding-top: 8%; }
+        footer .grid ul li {
+          font-size: 0.7em; }
+    footer .propper {
+      margin-top: 10%; }
+      footer .propper p {
+        font-size: small; }
+      footer .propper h2 {
+        font-size: small;
+        margin-top: 4%;
+        margin-bottom: 10%; } }
+
+.about {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  margin-top: 15%; }
+  .about .about-us p {
+    color: #999; }
+  .about .about-us section img {
+    width: 100%; }
+  .about .about-us section p {
+    font-size: 80%;
+    line-height: 2em; }
+  .about .about-us section .description {
+    padding-left: 8%;
+    padding-right: 8%; }
+    .about .about-us section .description h1 {
+      color: #f68773;
+      margin-top: 10%;
+      font-weight: 600;
+      font-size: 0.9em; }
+    .about .about-us section .description h2 {
+      margin-top: 10%;
+      font-weight: 600;
+      font-size: 1.6em; }
+  .about .about-us section .co-founder {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 15%;
+    margin-bottom: 10%; }
+    .about .about-us section .co-founder .quote {
+      position: relative;
+      height: 100px; }
+      .about .about-us section .co-founder .quote img {
+        width: 15%;
+        position: absolute;
+        margin-top: 3%;
+        filter: invert(100%) sepia(0%) saturate(3113%) hue-rotate(5deg) brightness(84%) contrast(79%); }
+      .about .about-us section .co-founder .quote p {
+        color: #222;
+        font-size: larger;
+        line-height: 1.25em;
+        position: absolute;
+        font-style: italic;
+        margin-top: 10%; }
+    .about .about-us section .co-founder h3 {
+      color: #f68773;
+      font-size: small;
+      margin-top: 10%;
+      font-weight: 600; }
+    .about .about-us section .co-founder h2 {
+      font-weight: 1em;
+      font-size: large;
+      margin-top: 5%;
+      margin-bottom: 10%;
+      font-weight: 500;
+      font-style: italic; }
+    .about .about-us section .co-founder p {
+      line-height: 1.5em; }
+  .about .about-us section .big-moments {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20%;
+    margin-bottom: 20%; }
+    .about .about-us section .big-moments h2 {
+      font-size: x-large;
+      font-weight: 600;
+      margin-bottom: 5%; }
+    .about .about-us section .big-moments .timeline h3 {
+      font-size: x-large;
+      font-weight: 600;
+      margin-top: 10%;
+      margin-bottom: 5%; }
+    .about .about-us section .big-moments .timeline p {
+      font-size: 0.9em; }
+  .about .no-drama {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20%; }
+    .about .no-drama p {
+      color: #999; }
+    .about .no-drama .video {
+      position: relative;
+      height: 330px;
+      text-align: center;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url("/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg"); }
+      .about .no-drama .video .play, .about .no-drama .video h2, .about .no-drama .video h3 {
+        position: absolute;
+        color: #fff;
+        width: 100%; }
+      .about .no-drama .video .play {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20%; }
+      .about .no-drama .video h2 {
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        font-weight: 900;
+        font-size: 3.5em; }
+      .about .no-drama .video h3 {
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 30%);
+        font-size: 2em;
+        font-weight: 400; }
+    .about .no-drama .pros {
+      margin-top: 15%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 50%;
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr 4fr;
+      row-gap: 25px; }
+      .about .no-drama .pros i {
+        color: #f68773;
+        padding-top: 50%;
+        padding: 5%; }
+      .about .no-drama .pros h3 {
+        font-size: small;
+        font-weight: 500;
+        margin-bottom: 5%; }
+      .about .no-drama .pros p {
+        font-size: small;
+        margin-top: 5%; }
+    .about .no-drama .technology h2 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.6em;
+      margin-bottom: 10%; }
+    .about .no-drama .technology p {
+      font-size: 0.85em;
+      line-height: 1.5em;
+      padding-bottom: 4%; }
+  .about .members {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 40%; }
+    .about .members p {
+      color: #999;
+      font-size: small;
+      margin-top: 0; }
+    .about .members h2 {
+      text-align: center;
+      font-weight: 600;
+      font-size: x-large; }
+    .about .members .people {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30px; }
+      .about .members .people img {
+        width: 100%;
+        margin-top: 20%;
+        margin-bottom: 10%; }
+      .about .members .people h3 {
+        font-size: medium;
+        line-height: 1.5em;
+        font-weight: 600; }
+  .about .brands {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: center; }
+    .about .brands img {
+      width: 100%;
+      filter: invert(100%) sepia(0%) saturate(3113%) hue-rotate(5deg) brightness(84%) contrast(79%); }
+
+.shop {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  margin-top: 15%;
+  font-size: medium;
+  padding-left: 3%;
+  padding-right: 3%; }
+  .shop .top h1 {
+    font-size: 2.25em;
+    font-weight: 600; }
+  .shop .top h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 0.8em;
+    font-weight: 500;
+    word-spacing: 15px; }
+  .shop .top span {
+    color: #999; }
+  .shop .top .filter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .shop .top .filter p {
+      margin-bottom: 20%;
+      font-weight: 500; }
+    .shop .top .filter img {
+      width: 10%;
+      float: right; }
+  .shop .top .not-mobile {
+    display: none; }
+  .shop .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px; }
+    .shop .products div {
+      position: relative; }
+      .shop .products div img {
+        width: 90%;
+        top: 0;
+        left: 0; }
+      .shop .products div .hidden {
+        opacity: 0;
+        position: absolute; }
+        .shop .products div .hidden:hover {
+          opacity: 1; }
+      .shop .products div h3 {
+        font-weight: 400;
+        font-size: 0.88em;
+        margin-top: 5%;
+        margin-bottom: 6%; }
+      .shop .products div p {
+        color: #999;
+        margin-top: 6%;
+        font-size: small;
+        margin-bottom: 25%; }
+      .shop .products div .stars {
+        color: #f68773;
+        font-size: 0.7em; }
+        .shop .products div .stars span {
+          color: #999; }
+      .shop .products div .promo, .shop .products div .hot, .shop .products div .sale {
+        width: 30px;
+        padding: 5px;
+        border-radius: 8%;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%, 50%); }
+      .shop .products div .hot {
+        background-color: #ff1d3b; }
+      .shop .products div .sale {
+        background-color: #f68773; }
+  .shop .discover {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 600;
+    text-decoration: 2px underline;
+    text-underline-offset: 40%;
+    margin-bottom: 25%;
+    margin-top: 5%; }
+  .shop .nav {
+    color: #999; }
+    .shop .nav h2 {
+      color: #222;
+      font-size: 1.4em;
+      font-weight: 600;
+      margin-bottom: 5%;
+      margin-top: 5%; }
+    .shop .nav ul {
+      padding-top: 5%; }
+      .shop .nav ul li {
+        padding-bottom: 5%;
+        font-size: 0.8em; }
+    .shop .nav img {
+      width: 100%; }
+    .shop .nav p {
+      font-size: small;
+      padding-bottom: 5%; }
+    .shop .nav .color {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 15px;
+      margin-top: 5%; }
+      .shop .nav .color .color-dot i {
+        padding-right: 5%;
+        padding-bottom: 5%; }
+      .shop .nav .color .input {
+        text-align: right; }
+        .shop .nav .color .input .fa-check-square {
+          color: #222; }
+      .shop .nav .color .black {
+        color: #222; }
+      .shop .nav .color .blue {
+        color: #70849d; }
+      .shop .nav .color .gold {
+        color: #cc9900; }
+      .shop .nav .color .nude {
+        color: #cfa58f; }
+      .shop .nav .color .orange {
+        color: #cc6601; }
+      .shop .nav .color .red {
+        color: #990100; }
+      .shop .nav .color span {
+        color: #222; }
+    .shop .nav .small-products h2 {
+      margin-top: 10%; }
+    .shop .nav .small-products .three {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      column-gap: 5px;
+      row-gap: 15px;
+      margin-bottom: 35%; }
+      .shop .nav .small-products .three img {
+        width: 80%; }
+      .shop .nav .small-products .three h3 {
+        color: #222;
+        margin-bottom: 4%;
+        font-size: small;
+        font-weight: 600; }
+      .shop .nav .small-products .three .stars {
+        color: #f68773;
+        font-size: x-small;
+        margin-bottom: 5%; }
+        .shop .nav .small-products .three .stars span {
+          color: #999; }
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .shop {
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .shop .big-column {
+      grid-area: 1 / 1 / 2 / 3; }
+      .shop .big-column .top h1 {
+        font-size: 2em; }
+      .shop .big-column .top h2 {
+        margin-top: 3%;
+        margin-bottom: 5%;
+        font-size: 0.7em;
+        word-spacing: 10px; }
+      .shop .big-column .top .filter {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr); }
+        .shop .big-column .top .filter img {
+          width: 25%; }
+        .shop .big-column .top .filter p {
+          font-size: small;
+          margin-bottom: 10%; }
+        .shop .big-column .top .filter .found {
+          grid-column: 1 / span 5; }
+        .shop .big-column .top .filter .not-mobile {
+          display: inline;
+          grid-column: 6 / span 3; }
+          .shop .big-column .top .filter .not-mobile .only-desktop {
+            display: none; }
+          .shop .big-column .top .filter .not-mobile .tablet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); }
+            .shop .big-column .top .filter .not-mobile .tablet p span i {
+              margin-left: 50%; }
+          .shop .big-column .top .filter .not-mobile .not-desktop {
+            grid-column: 9 / span 1; }
+      .shop .big-column .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); }
+      .shop .big-column .discover {
+        margin-bottom: 10%;
+        margin-top: 0; }
+    .shop .small-column {
+      grid-area: 2 / 1 / 3 / 2; } }
+
+/*# sourceMappingURL=Charlotte.css.map */
