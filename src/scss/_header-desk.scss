@@ -1,17 +1,21 @@
+@import 'variables';
+
 @media screen and (min-width: 1008px) {
     header {
-        background-color: bisque;
-
+        margin-right: 1%;
+        margin-left: 1%;
+        
         .menu {
             display: grid;
-            grid-template-columns: 5fr 17fr 6fr 4fr;
-            margin-top: 0;
+            grid-template-columns: 4fr 18fr 6fr 4fr;
+            margin-top: 2%;
+            margin-bottom: 2%;
             padding: 0;
 
             .supro {
 
                 img {
-                    width: 30%;
+                    width: 40%;
                 }
             }
 
@@ -25,6 +29,16 @@
                     ul {
                         display: grid;
                         grid-template-columns: repeat(6, 1fr);
+
+                        li {
+                            text-align: center;
+                            a {
+                                text-decoration: none;
+                                color: $primary-color;
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 0.9em;
+                            }
+                        }
                     }
                 }
 
@@ -33,27 +47,27 @@
 
             .input {
                 display: grid;
-                grid-template-columns: 5fr 1fr;
+                grid-template-columns: 4fr 3fr;
 
                 img {
-                    width: 35%;
+                    width: 12.5%;
                 }
                 input {
                     display: block;
-                    width: 60%;
+                    width: 70%;
+                    border: none;
                 }
             }
 
             .user {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                margin-right: 0;
-                place-content: end;
-                                
+                margin-right: 20%;
+                                                                
                 img {
-                    width: 35%;
+                    width: 40%;
                     padding: 0;
-                    
+                                        
                }              
             }
 
