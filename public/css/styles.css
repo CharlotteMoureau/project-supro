@@ -27,47 +27,137 @@ ul {
 }
 
 Header {
-  border-bottom: 1px solid #F2EDE9;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid #F2EDE9;
 }
 Header .menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: 4fr 1fr 5fr;
   padding: 2.5%;
+  margin-top: 5%;
 }
-Header .menu img {
-  width: 25%;
+Header .menu .supro img {
+  width: 60%;
+  padding-left: 5%;
 }
 Header .menu nav {
   display: none;
 }
-Header .menu .input {
+Header .menu .input img {
+  width: 60%;
+}
+Header .menu .input input {
   display: none;
 }
 Header .menu .user {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-right: 4%;
 }
 Header .menu .user img {
-  width: 8%;
-  margin: 4%;
+  width: 50%;
 }
 
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  header .menu {
+    display: grid;
+    grid-template-columns: 7fr 1fr 2fr;
+    margin-top: 1%;
+    padding-right: 5%;
+  }
+  header .menu .supro img {
+    width: 20%;
+    padding: 0;
+  }
+  header .menu .input img {
+    width: 30%;
+    padding-left: 50%;
+  }
+  header .menu .user {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  header .menu .user img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1008px) {
+  header {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  header .menu {
+    display: grid;
+    grid-template-columns: 4fr 18fr 6fr 4fr;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+  }
+  header .menu .supro img {
+    width: 40%;
+  }
+  header .menu nav {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+  }
+  header .menu nav div {
+    grid-area: 1/1/2/10;
+  }
+  header .menu nav div ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  header .menu nav div ul li {
+    text-align: center;
+  }
+  header .menu nav div ul li a {
+    text-decoration: none;
+    color: #222;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+  }
+  header .menu .input {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+  }
+  header .menu .input img {
+    width: 12.5%;
+  }
+  header .menu .input input {
+    display: block;
+    width: 70%;
+    border: none;
+  }
+  header .menu .user {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-right: 20%;
+  }
+  header .menu .user img {
+    width: 40%;
+    padding: 0;
+  }
+}
 footer {
+  font-family: "Roboto", sans-serif;
+  color: #222;
   margin-top: 20%;
-  font-size: small;
   padding-left: 5%;
   padding-right: 5%;
 }
 footer .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 30px;
+  column-gap: 30px;
 }
 footer .grid h3 {
   font-weight: 600;
+  font-size: medium;
+  margin-bottom: 20%;
+  margin-top: 20%;
 }
 footer .grid ul {
   list-style: none;
-  padding: 0;
   padding-top: 5%;
 }
 footer .grid ul li {
@@ -76,11 +166,13 @@ footer .grid ul li {
   font-size: medium;
 }
 footer .propper {
-  padding-top: 20%;
+  border-top: 2px solid #F2EDE9;
+  margin-top: 20%;
   color: #999;
 }
 footer .propper p {
   font-size: medium;
+  margin-top: 10%;
 }
 footer .propper p span {
   color: #222;
@@ -90,9 +182,87 @@ footer .propper h2 {
   font-size: large;
   display: inline-block;
   padding-right: 10%;
-  font-weight: 400;
+  margin-top: 10%;
+  margin-bottom: 20%;
+  font-weight: 500;
 }
 
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  footer {
+    margin-top: 0;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .grid h3 {
+    font-size: 0.7em;
+    margin-bottom: 4%;
+  }
+  footer .grid ul {
+    padding-top: 8%;
+  }
+  footer .grid ul li {
+    font-size: 0.7em;
+  }
+  footer .propper {
+    margin-top: 10%;
+  }
+  footer .propper p {
+    font-size: small;
+  }
+  footer .propper h2 {
+    font-size: small;
+    margin-top: 4%;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 1008px) {
+  footer {
+    margin-top: 0;
+    padding: 0;
+    margin: auto;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  footer .grid h3 {
+    margin-top: 0;
+    font-size: 0.9em;
+    margin-bottom: 5%;
+  }
+  footer .grid ul {
+    padding-top: 0;
+  }
+  footer .grid ul li {
+    font-size: 0.9em;
+    padding-top: 5%;
+  }
+  footer .propper {
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+  }
+  footer .propper div {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+  footer .propper div p {
+    margin-top: 5%;
+  }
+  footer .propper div h2 {
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+  }
+}
 main {
   display: flex;
   justify-content: center;

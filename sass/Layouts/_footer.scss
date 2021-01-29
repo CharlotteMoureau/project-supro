@@ -1,20 +1,23 @@
 //Footer
 
 footer {
+  font-family: 'Roboto', sans-serif;
+  color: $primary-color;
   margin-top: 20%;
-  font-size: small;
   padding-left: 5%;
   padding-right: 5%;
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 30px;
+    column-gap: 30px;
     h3 {
       font-weight: 600;
+      font-size: medium;
+      margin-bottom: 20%;
+      margin-top: 20%;
     }
     ul {
       list-style: none;
-      padding: 0;
       padding-top: 5%;
       li {
         color: $secondary-color;
@@ -24,10 +27,12 @@ footer {
     }
   }
   .propper {
-    padding-top: 20%;
+    border-top: 2px solid $quaternary-color;
+    margin-top: 20%;
     color: $secondary-color;
     p {
       font-size: medium;
+      margin-top: 10%;
       span {
         color: $primary-color;
         font-weight: 600;
@@ -37,7 +42,89 @@ footer {
       font-size: large;
       display: inline-block;
       padding-right: 10%;
-      font-weight: 400;
+      margin-top: 10%;
+      margin-bottom: 20%;
+      font-weight: 500;
+    }
+  }
+}
+
+// Tablette
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  footer {
+    margin-top: 0;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      h3 {
+        font-size: 0.7em;
+        margin-bottom: 4%;
+      }
+      ul {
+        padding-top: 8%;
+        li {
+          font-size: 0.7em;
+        }
+      }
+    }
+    .propper {
+      margin-top: 10%;
+      p {
+        font-size: small;
+      }
+      h2 {
+        font-size: small;
+        margin-top: 4%;
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1008px) {
+  footer {
+    margin-top: 0;
+    padding: 0;
+    margin: auto;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      width: 60%;
+      margin: auto;
+      margin-bottom: 5%;
+      h3 {
+        margin-top: 0;
+        font-size: 0.9em;
+        margin-bottom: 5%;
+      }
+      ul {
+        padding-top: 0;
+        li {
+          font-size: 0.9em;
+          padding-top: 5%;
+        }
+      }
+    }
+    .propper {
+      display: flex;
+      width: 100%;
+      margin-top: 0;
+      div {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        p {
+          margin-top: 5%;
+        }
+        h2 {
+          margin: 0;
+          padding: 0;
+          font-size: medium;
+        }
+      }
     }
   }
 }
