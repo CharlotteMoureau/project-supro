@@ -7,15 +7,13 @@ main {
   max-width: 100vw;
   height: auto;
 }
-.homepage, .top-sellers, .new-arrival, .deal-day, .latest-news, .keep-connected, .images {
+.homepage {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   width: 100%;
   height: auto;
-}
-.homepage {
   h2 {
     font-size: 2.5em;
     margin: .5em 0;

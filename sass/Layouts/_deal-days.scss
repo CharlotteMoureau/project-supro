@@ -1,15 +1,20 @@
 // Section 4 - Deal of the day
 .deal-day {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
   background: no-repeat url(../img/homepage/deals_image.jpg) center (right -700px);
-  height: 70vh;
+}
+.deal-day-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
   padding: 1em;
-  align-items: start;
-  @media (min-width: 640px) {
-    padding: 3em;
-    height: 55vh;
-    background: no-repeat url(../img/homepage/deals_image.jpg) center (right -300px);
-    background-size: 170%;
-  }
   h2 {
     margin-bottom: .5em;
   }
@@ -19,14 +24,14 @@
     font-weight: 400;
   }
   h5 {
-    display: block;
-    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
     background-color: $tertiary-color;
     color: $quinary-color;
     margin: 1.5em 0;
-    @media (min-width: 640px) {
-      margin: 1.5em 0 3em 0;
-    }
   }
   ul {
     display: flex;
@@ -36,11 +41,7 @@
     width: 100%;
     height: auto;
     background-color: $quinary-color;
-    margin-bottom: 5em;
-    @media (min-width: 640px) {
-      max-width: 75%;
-      margin-bottom: 3em;
-    }
+    margin-bottom: 2em;
     li {
       width: calc(100% / 4);
       text-align: center;
@@ -51,5 +52,40 @@
     display: block;
     width: 100%;
     font-size: 1em;
+  }
+}
+
+@media (min-width: 640px) {
+  .deal-day {
+    height: 50vh;
+    background: no-repeat url(../img/homepage/deals_image.jpg) center (right -300px);
+    background-size: 200%;
+  }
+  .deal-day-div {
+    padding: 3em;
+  }
+  h5 {
+    margin: 1.5em 0 3em 0;
+  }
+  ul {
+    max-width: 75%;
+    margin-bottom: 3em;
+  }
+}
+
+@media (min-width: 1008px) {
+  .deal-day {
+    max-height: 500px;
+    background: no-repeat url(../img/homepage/deals_image.jpg) center;
+    background-size: 100%;
+  }
+  .deal-day-div {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    ul {
+      max-width: 500px;
+      margin-bottom: 3em;
+    }
   }
 }

@@ -1,25 +1,18 @@
 // Section 5 - Latest News
 .latest-news {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
   height: auto;
   padding: 5em 1em 1em 1em;
-  align-items: start;
-  @media (min-width: 640px) {
-    padding: 3em;
-  }
   h2{
     font-size: 2em;
     margin-bottom: .5em;
   }
   h4 {
     margin-bottom: .5em;
-  }
-  > a {
-    @media (min-width: 640px) {
-      position: relative;
-      top: -3em;
-      align-self: flex-end;
-    }
   }
 }
 .latest-news-grid {
@@ -28,11 +21,6 @@
   height: auto;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(1, 1fr);
-  @media (min-width: 640px) {
-    grid-template-rows: 1.5fr .8fr;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2em;
-  }
   article {
     width: auto;
     height: auto;
@@ -63,26 +51,68 @@
   .five {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    @media (min-width: 640px) {
-      grid-column: 1 / span 4;
-      grid-row: 1 / span 1;
-    }
   }
   .kering {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
-    @media (min-width: 640px) {
-      grid-column: 1 / span 2;
-      grid-row: 2 / span 1;
-    }
   }
   .these {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
-    @media (min-width: 640px) {
+  }
+}
+
+@media (min-width: 640px) {
+  .latest-news {
+    padding: 3em;
+    > a {
+      position: relative;
+      top: -3em;
+      align-self: flex-end;
+    }
+  }
+  .latest-news-grid {
+    grid-template-rows: 1.5fr .8fr;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2em;
+    .five {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 1;
+    }
+    .kering {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 1;
+    }
+    .these {
       grid-column: 3 / span 2;
       grid-row: 2 / span 1;
     }
   }
 }
 
+@media (min-width: 1008px) {
+  .latest-news-grid {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    column-gap: 3em;
+    .five {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+    }
+    .kering {
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+    }
+    .these {
+      grid-column: 5 / span 1;
+      grid-row: 1 / span 1;
+    }
+    img {
+      max-width: 384px;
+      max-height: 384px;
+    }
+  }
+}

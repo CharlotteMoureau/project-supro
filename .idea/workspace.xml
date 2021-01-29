@@ -3,15 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0e011947-3654-442c-a3cd-356844b96fa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/homepage/homepage.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/Base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Base/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/Layouts/_deal-days.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_deal-days.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/Layouts/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/Layouts/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/Layouts/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_images.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/Layouts/_keep-connected.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_keep-connected.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/Layouts/_latest-news.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_latest-news.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/Layouts/_new-arrival.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_new-arrival.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/Layouts/_top-sellers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_top-sellers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/Pages/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Pages/_homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +52,6 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,6 +63,7 @@
       <workItem from="1611582121530" duration="3760000" />
       <workItem from="1611647675656" duration="4815000" />
       <workItem from="1611908070461" duration="10558000" />
+      <workItem from="1611924552740" duration="9231000" />
     </task>
     <servers />
   </component>
@@ -89,5 +80,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
