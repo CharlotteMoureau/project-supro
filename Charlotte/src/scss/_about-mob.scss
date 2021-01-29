@@ -120,7 +120,7 @@
     .no-drama {
         padding-left: 5%;
         padding-right: 5%;
-        padding-bottom: 20%;
+        margin-bottom: 15%;
 
         p {
             color: $secondary-color;
@@ -133,7 +133,7 @@
             background-size: cover; 
             background-position: center center; 
             background-repeat: no-repeat; 
-            background-image: url('/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg');
+            background-image: url('../../images/about-Charlotte/resources/video-img.jpg');
             
             
             .play, h2, h3 {
@@ -167,30 +167,35 @@
         }
 
         .pros {
-            margin-top: 15%;
+            margin-top: 10%;
             margin-left: 5%;
             margin-right: 5%;
-            margin-bottom: 50%;
+            margin-bottom: 40%;
             display: grid;
-            grid-template-columns: 1fr 4fr 1fr 4fr;
-            row-gap: 25px;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 10%;
             
-            i {
-                color: $tertiary-color;
-                padding-top: 50%;
-                padding: 5%;
+            .cell {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                margin-top: 20%;
+                
+                i {
+                    color: $tertiary-color;                  
+                }
+    
+                h3 {
+                    font-size: small;
+                    font-weight: 500;
+                    margin-bottom: 5%;
+                }
+    
+                p {
+                    font-size: small;
+                    margin-top: 5%;
+                }
             }
-
-            h3 {
-                font-size: small;
-                font-weight: 500;
-                margin-bottom: 5%;
-            }
-
-            p {
-                font-size: small;
-                margin-top: 5%;
-            }
+            
         }
 
         .technology {
@@ -230,7 +235,7 @@
         .people {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 30px;
+            column-gap: 30px;
 
             img {
                 width: 100%;
@@ -251,13 +256,13 @@
         padding-right: 5%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
+        column-gap: 20px;
+        row-gap: 20px;
         align-items: center;
         
         img {
             width: 100%;
-            filter: invert(100%) sepia(0%) saturate(3113%) hue-rotate(5deg) brightness(84%) contrast(79%);
+            filter: invert(57%) sepia(57%) saturate(5%) hue-rotate(23deg) brightness(97%) contrast(82%);
         }
     }
 }
