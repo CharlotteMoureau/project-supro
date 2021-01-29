@@ -46,7 +46,7 @@ table {
 
 Header {
   font-family: 'Roboto', sans-serif;
-  border-bottom: 1px solid #F2EDE9; }
+  border-bottom: 2px solid #F2EDE9; }
   Header .menu {
     display: grid;
     grid-template-columns: 4fr 1fr 5fr;
@@ -153,7 +153,7 @@ footer {
         padding-top: 10%;
         font-size: medium; }
   footer .propper {
-    border-top: 1px solid #F2EDE9;
+    border-top: 2px solid #F2EDE9;
     margin-top: 20%;
     color: #999; }
     footer .propper p {
