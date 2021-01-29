@@ -47,4 +47,6 @@ Colors
 
 ### Our method:
 
-We decided to go for a mobile-first approach as mobile is the most popular device. Mobile-first method also makes up for a faster download time and shortens the code significantly (which then allows fewer bugs). We used Sass as our preprocesser for CSS. François did the homepage and the mobile menu, Charlotte did the Shop page and the About page and Asceline did the Single product page and the Contact page.
+We decided to go for a mobile-first approach as mobile is the most popular device. Mobile-first method also makes up for a faster download time and shortens the code significantly (which then allows fewer bugs). 
+We used Sass as our preprocesser for CSS. 
+François did the homepage and the mobile menu, Charlotte did the Shop page and the About page and Asceline did the Single product page and the Contact page.
