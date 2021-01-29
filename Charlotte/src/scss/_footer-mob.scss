@@ -10,7 +10,7 @@ footer {
     .grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 30px;
+        column-gap: 30px;
 
         h3 {
             font-weight: 600;
@@ -32,7 +32,7 @@ footer {
     }
 
     .propper {
-        border-top: 1px solid $quaternary-color;
+        border-top: 2px solid $quaternary-color;
         margin-top: 20%;
         color: $secondary-color;
 
