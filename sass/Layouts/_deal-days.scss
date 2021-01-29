@@ -1,0 +1,55 @@
+// Section 4 - Deal of the day
+.deal-day {
+  background: no-repeat url(../img/homepage/deals_image.jpg) center (right -700px);
+  height: 70vh;
+  padding: 1em;
+  align-items: start;
+  @media (min-width: 640px) {
+    padding: 3em;
+    height: 55vh;
+    background: no-repeat url(../img/homepage/deals_image.jpg) center (right -300px);
+    background-size: 170%;
+  }
+  h2 {
+    margin-bottom: .5em;
+  }
+  h4 {
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  h5 {
+    display: block;
+    padding: .5em;
+    background-color: $tertiary-color;
+    color: $quinary-color;
+    margin: 1.5em 0;
+    @media (min-width: 640px) {
+      margin: 1.5em 0 3em 0;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: $quinary-color;
+    margin-bottom: 5em;
+    @media (min-width: 640px) {
+      max-width: 75%;
+      margin-bottom: 3em;
+    }
+    li {
+      width: calc(100% / 4);
+      text-align: center;
+      margin: 1em .8em;
+    }
+  }
+  a {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+  }
+}

@@ -1,9 +1,7 @@
 //Footer
 
 footer {
-  font-family: 'Roboto', sans-serif;
   color: $primary-color;
-  margin-top: 20%;
   padding-left: 5%;
   padding-right: 5%;
   .grid {
@@ -52,7 +50,6 @@ footer {
 // Tablette
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   footer {
-    margin-top: 0;
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -84,8 +81,6 @@ footer {
 // Desktop
 @media screen and (min-width: 1008px) {
   footer {
-    margin-top: 0;
-    padding: 0;
     margin: auto;
     .grid {
       display: grid;

@@ -1,7 +1,6 @@
 //Header
 
 Header {
-  font-family: 'Roboto', sans-serif;
   border-bottom: 2px solid $quaternary-color;
   .menu {
     display: grid;
@@ -96,7 +95,6 @@ Header {
               a {
                 text-decoration: none;
                 color: $primary-color;
-                font-family: 'Roboto', sans-serif;
                 font-size: 0.9em;
               }
             }
