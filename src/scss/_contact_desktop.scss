@@ -1,0 +1,275 @@
+@import '_variables.scss';
+
+@media screen and (min-width: 1008px) {
+
+    .contact {
+        font-family: 'Roboto', sans-serif;
+        color: $primary-color;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: $quinary-color;
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, $quinary-color, $secondary-color, $quinary-color); 
+        }
+        
+        .contact-presentation {
+            text-align: center;
+            padding-top: 10%;
+
+            #image {
+                background-image: url("");
+            }
+            
+            h1 {
+                font-weight: 700;
+                font-size: 25px;
+            }
+
+            h2 {
+
+            }
+        }
+
+        .ask {
+            margin: 5%;
+
+            .image {
+                #ask-mobile {
+                    display: none;
+                }
+
+                #ask-tablet-desktop {
+                    width: 100%;
+                }
+            }
+
+            .myButton {
+                background-color:$primary-color;
+                display:inline-block;
+                color: $quinary-color;
+                font-size: 15px;
+                font-weight: 700;
+                padding: 25px 60px;
+                align-content: center;
+                text-decoration:none;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .media {
+                color: $secondary-color;
+                font-size: 120%;
+                padding: 3%;
+                padding-top: 5%;
+                padding-bottom: 10%;
+                
+                i {
+                    padding-right: 5%;
+                }
+            }
+        }
+
+        .info {
+            margin: 5%;
+            
+
+            h1 {
+                font-weight: 700;
+                font-size: 25px;
+                padding-top: 5%;
+                padding-bottom: 10%;
+            }
+
+            h2 {
+                text-transform: uppercase;
+                padding-bottom: 5%;
+            }
+
+            h3 {
+                color: $secondary-color;
+                font-weight: 400;
+                padding-bottom: 5%;
+                
+            }
+            
+            .our-office {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(1, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                .office-title {
+                    grid-area: 1 / 1 / 2 / 2;
+                    
+                }
+
+                .office-abstract {
+                    grid-area: 2 / 1 / 3 / 2;
+                
+                }
+                
+            }
+
+            .get-one-touch {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                
+                .get-title {
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+
+                .get-phone {
+                    flex-direction: column;
+                    grid-area: 2 / 1 / 3 / 2;
+                    color: $secondary-color;
+                    
+                }
+
+                .get-email {
+                    flex-direction: column;
+                    grid-area: 3 / 1 / 4 / 2;
+                    color: $secondary-color;
+                }
+            }
+        }
+        
+
+        .london-sydney-hamburg {
+            margin: 5%;
+            padding-bottom: 10%;
+            
+            h1 {
+                font-weight: 700;
+                font-size: 25px;
+                padding-top: 5%;
+                padding-bottom: 10%;
+            } 
+
+            h2 {
+                font-size: 95%;
+                padding-bottom: 5%;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                color: $secondary-color;
+                font-weight: 400;
+                padding-bottom: 10%;
+            }
+
+            
+            .london-store {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                .london-title {
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+
+                .london-location {
+                    flex-direction: column;
+                    grid-area: 1 / 2 / 2 / 3;
+            
+                }
+
+                .london-phone {
+                    flex-direction: column;
+                    grid-area: 1 / 3 / 2 / 4;
+                
+                }
+
+                .london-email {
+                    flex-direction: column;
+                    grid-area: 1 / 4 / 2 / 5; 
+                
+                }
+            }
+
+            .sydney-store {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                .sydney-title {
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+
+                .sydney-location {
+                    grid-area: 1 / 2 / 2 / 3;
+                
+                }
+
+                .sydney-phone {
+                    flex-direction: column;
+                    grid-area: 1 / 3 / 2 / 4;
+                }
+
+                .sydney-email {
+                    flex-direction: column;
+                    grid-area: 1 / 4 / 2 / 5; 
+                    
+                }
+            }
+
+            .hamburg-store {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+
+                .hamburg-title {
+                    grid-area: 1 / 1 / 2 / 2;
+                }
+
+                .hamburg-location {
+                    flex-direction: column;
+                    grid-area: 1 / 2 / 2 / 3;
+                }
+
+                .hamburg-phone {
+                    flex-direction: column;
+                    grid-area: 1 / 3 / 2 / 4;
+                    
+                }
+
+                .hamburg-email {
+                    flex-direction: column;
+                    grid-area: 1 / 4 / 2 / 5; 
+                
+                }
+            }
+        }
+            
+
+        .map {
+            
+            .map-responsive{
+                overflow:hidden;
+                padding-bottom:56.25%;
+                position:relative;
+                height:0;
+            }
+            .map-responsive iframe{
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
+        }
+    }
+}

@@ -1,335 +1,365 @@
-@import '_mixins.scss';
 @import '_variables.scss';
 
+@media screen and (min-width: 641px) and (max-width: 1007px) {
 
-.product {
-    font-family: 'Roboto', sans-serif;
-    color: $secondary-color;
-    box-sizing: border-box;
-    margin: 5%;
-    padding: 10%;
-    background-color: $quinary-color;
+    .product {
+        font-family: 'Roboto', sans-serif;
+        color: $secondary-color;
+        box-sizing: border-box;
+        margin: 5%;
+        padding: 0;
+        background-color: $quinary-color;
 
-    hr {
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, $quinary-color, $secondary-color, $quinary-color); 
-    }
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, $quinary-color, $secondary-color, $quinary-color); 
+        }
 
-    .article-sale {
+        .article-sale {
 
-        .article-menu {
-            margin-top: 20%;
-            margin-bottom: 20%;
+            .article-menu {
+                margin-top: 20%;
+                margin-bottom: 20%;
+                
+                h1 {
+                    font-size: 15px;
+                    word-spacing: 5px;
+                    line-height: 150%;
+                }
+
+                .black {
+                    color: $primary-color;
+                }
+
+                .chevron {
+                    display: none;
+                }
+            }
+        
+            .article-presentation {
+                display: grid;
+                grid-template-columns: 1fr;
+                position: relative;
+
+                .article-picture {
+                    position: relative;
+                    
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: translate(137%, 15%);
+                        width: 50%;
+                    }
+
+                    .art-arrow {
+                        width: 20%;
+                        height: auto;
             
-            h1 {
-                font-size: 15px;
-                word-spacing: 5px;
-                line-height: 150%;
+                    }
+
+                    .principal-picture {
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+
+                .article-test {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    padding-bottom: 10%;
+                    width: 75%;
+                
+                    .picture {
+                        width: 100%;
+                        height: auto;
+                        margin-top: 10%;
+                        padding-right: 4%;
+                        justify-content: space-around;
+                    }
+
+                    #hide-a-cover {
+                        display: inline;
+                    }
+                }
+
+                .notice {
+                    display: flex;
+
+                    #stars {
+                        color: $tertiary-color;
+                        font-size: 0.7em;
+                    }
+
+                    #stars-span {
+                        color: $secondary-color;
+                        font-size: 0.7em;
+                    }
+
+                    p {
+                        font-size: 90%;
+                        text-align: left;
+                        padding-left: 4%;
+                    }
+                }
+
+
+                h1 {
+                    font-size: 200%;
+                    font-weight: 600;
+                    color: $primary-color;
+                    padding-bottom: 4%;
+                    text-align: left;
+                    line-height: 110%;
+                }
+                
+                h2 {
+                    color: $primary-color;
+                    padding-bottom: 5%;
+                    font-size: 110%;
+                }
+
+                h3 {
+                    font-size: 85%;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 100%;
+                    font-weight: 300;
+                    padding-bottom: 5%;
+                }
+
+                hr {
+                    margin-top: 5%;
+                    margin-bottom: 3%;
+                }
+
+                .category-clothes {
+                    
+                    h2 {
+                        font-size: 95%;
+                        font-weight: 500;
+                        color: $primary-color;
+                        margin: 0;
+                    }
+        
+                    h3 {
+                        font-size: 85%;
+                        font-weight: 400;
+                        padding-bottom: 3%;
+                        color: $secondary-color;
+                    }
+                }
+
+                .buttons {
+                    padding-bottom: 3%;
+                    
+                    .little-buttons {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .myButton {
+                    background-color:$primary-color;
+                    display:inline-block;
+                    color: $quinary-color;
+                    font-size: 15px;
+                    font-weight: 700;
+                    padding: 15px 275px;
+                    align-content: center;
+                    text-decoration:none
+                }
+
+                .media {
+                    color: $primary-color;
+                    font-size: 120%;
+                    padding: 3%;
+                    
+                    padding-bottom: 10%;
+                    
+                    i {
+                        padding-right: 5%;
+                    }
+                }
+            }
+        }
+
+        .titles-description {
+            display: flex;
+            justify-content: space-around;
+
+            h2 {
+                padding-top: 5%;
+                padding-bottom: 5%;
+                font-weight: 500;
+                font-size: 150%;
+            }
+            
+            sup {
+                vertical-align: super;
+                font-size: 65%;
             }
 
             .black {
                 color: $primary-color;
             }
         }
-    
-        .article-presentation {
-            display: grid;
-            grid-template-columns: 1fr;
-            position: relative;
 
-            .article-picture {
-                position: relative;
-                
-                span {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    transform: translate(140%, 20%);
-                    width: 60%;
-                }
 
-                .art-arrow {
-                    width: 20%;
-                    height: auto;
-           
-                }
+        .pyjama-description {
+            padding-top: 10%;
+            padding-bottom: 10%;
 
-                .principal-picture {
-                    
-                    height: auto;
-                }
-            }
-
-            .article-test {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                padding-bottom: 10%;
-            
-                .picture {
-                    width: 90%;
-                    height: auto;
-                    margin-top: 10%;
-                    padding: 4%;
-                    justify-content: space-around;
-                }
-
-                #hide-a-cover {
-                    display: none;
-                }
-            }
-
-            .notice {
+            .description {
                 display: flex;
+                flex-wrap: wrap;
+            
+                .description div {
 
-                #stars {
-                    color: $tertiary-color;
-                    font-size: 0.7em;
+                    flex: 1;
                 }
+            
+                .description-text {
+                    float: left;
+                    padding-bottom: 5%;
+                    
+                    h2 {
+                        font-weight: 300;
+                        font-size: 200%;
+                        color: $primary-color;
+                        padding-top: 4%;
+                        padding-bottom: 8%;
+                        padding-left: 4%;
+                    }
 
-                #stars-span {
-                    color: $secondary-color;
-                    font-size: 0.7em;
+                    h3 {
+                        font-weight: 400;
+                        font-size: 100%;
+                        line-height: 150%;
+                        padding-left: 4%;
+                        padding-right: 4%;
+                        text-align: justify;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 100%;
+                        line-height: 150%;
+                        padding-left: 4%;
+                        padding-right: 4%;
+                    }
+                    
+                
+                    ul {
+                        list-style-type: disc;
+                        line-height: 150%;
+                        padding-left: 8%;
+                        padding-right: 4%;
+                    }
                 }
+            
+                .description-image {
+                    margin-left: 5%;
+                    
 
-                p {
-                    font-size: 100%;
-                    text-align: left;
-                    padding-left: 4%;
+                    .pyjama {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
-
+        }
+        
+        .art-present {
 
             h1 {
-                font-size: 85%;
-                font-weight: 600;
+                font-size: 170%;
+                font-weight: 500;
                 color: $primary-color;
-                padding-bottom: 5%;
-                text-align: left;
-                line-height: 110%;
-            }
-            
-            h2 {
-                color: $primary-color;
-            }
-
-            h3 {
-                font-size: 70%;
-                font-weight: 400;
-                padding-bottom: 5%;
-            }
-
-            p {
-                font-size: 100%;
-                font-weight: 300;
-                padding-bottom: 5%;
-            }
-
-            .category-clothes {
-                padding-top: 5%;
-                padding-bottom: 5%;
-                
-                h2 {
-                    font-size: 95%;
-                    font-weight: 500;
-                    color: $primary-color;
-                    margin: 0;
-                }
-    
-                h3 {
-                    font-size: 85%;
-                    font-weight: 400;
-                    padding-bottom: 3%;
-                    color: $secondary-color;
-                }
-    
-            
-            }
-
-            .buttons {
-                padding-bottom: 3%;
-                
-                .little-buttons {
-                    width: 100%;
-                    height: auto;
-                }
-
-            }
-
-
-            .myButton {
-                background-color:$primary-color;
-                display:inline-block;
-                color: $quinary-color;
-                font-size: 15px;
-                font-weight: 700;
-                padding: 15px 135px;
-                align-content: center;
-                text-decoration:none
-            }
-
-            .media {
-                color: $primary-color;
-                font-size: 120%;
-                padding: 3%;
                 padding-top: 5%;
                 padding-bottom: 10%;
-                
-                i {
-                    padding-right: 5%;
-                }
+                text-align: center;
             }
-        }
-    }
 
-    .titles-description {
-
-        h2 {
-            text-align: center;
-            padding-top: 5%;
-            padding-bottom: 5%;
-            font-weight: 500;
-            font-size: 150%;
-            line-height: 85%;
+            .art-zero {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 5px;
+                grid-row-gap: 5px;
+                padding-bottom: 10%;
+                padding-left: 5%;
+                justify-content: center;
             
-        }
-        
-        sup {
-            vertical-align: super;
-            font-size: 65%;
-        }
+                .art-one { 
+                    grid-area: 1 / 1 / 2 / 2;
+                    
+                    img {
+                        width: 90%;
+                        height: auto;
+                        justify-content: center;
+                    }
+                }
+                .art-two { 
+                    grid-area: 1 / 2 / 2 / 3; 
+                    
+                    img {
+                        width: 90%;
+                        height: auto;
+                        justify-content: center;
+                    }
+                }
 
-        .black {
-            color: $primary-color;
-        }
-    }
+                .art-three { 
+                    grid-area: 2 / 1 / 3 / 2; 
+                    
+                    img {
+                        width: 90%;
+                        height: auto;
+                        justify-content: center;
+                    }
+                }
+                .art-four { 
+                    grid-area: 2 / 2 / 3 / 3; 
+                    
+                    img {
+                        width: 90%;
+                        height: auto;
+                        justify-content: center;
+                    }
+                } 
 
 
-    .pyjama-description {
-        padding-top: 10%;
-        padding-bottom: 10%;
-
-        .description {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        
-            .description div {
-                font-size: 5vw;
-                padding: .5em;
-                flex: 1;
-            }
-        
-            .description-text {
-                float: left;
-                padding-bottom: 5%;
-                
                 h2 {
+                    text-align: left;
                     font-weight: 300;
-                    font-size: 200%;
+                    width: 70%;
                     color: $primary-color;
-                    padding-bottom: 8%;
-                    margin: 5%;
+                    padding-top: 5%;
+                    padding-bottom: 3%;
                 }
 
                 h3 {
-                    font-weight: 400;
-                    font-size: 100%;
-                    line-height: 150%;
-                    padding-left: 4%;
-                    padding-right: 4%;
+                    text-align: left;
+                    width: 60%;
+                    padding-top: 3%;
+                    padding-bottom: 3%;
                 }
 
-                p {
-                    font-weight: 300;
-                    font-size: 100%;
-                    line-height: 150%;
-                    padding-left: 4%;
-                    padding-right: 4%;
-                }
+                .stars {
+                    color: $tertiary-color;
+                    font-size: 0.7em;
                 
-            
-                ul {
-                    list-style-type: disc;
-                    line-height: 150%;
-                    padding-left: 8%;
-                    padding-right: 4%;
-                }
-            }
-        
-            .description-image {
-                justify-content: center;
-                padding-left: 4%;
-                padding-right: 4%;
-
-                .pyjama {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        }
-    }
-    
-    .art-present {
-
-        h1 {
-            font-size: 170%;
-            font-weight: 500;
-            color: $primary-color;
-            padding-top: 5%;
-            padding-bottom: 10%;
-            text-align: center;
-        }
-
-
-        .art-zero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 10%;
-
-        
-            .art-one, .art-one-one, .art-two, .art-three {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                flex-wrap: wrap;
-            }
-        
-            .art-zero div {
-                flex: 1;
-            }  
-            
-            .art-one, .art-two, .art-three, .art-four img {
-                width: 50%;
-                height: auto;
-            }
-
-            h2 {
-                text-align: left;
-                font-weight: 300;
-                color: $primary-color;
-                padding-top: 5%;
-                padding-bottom: 3%;
-            }
-
-            h3 {
-                text-align: left;
-                padding-top: 3%;
-                padding-bottom: 3%;
-            }
-
-            .stars {
-                color: $tertiary-color;
-                font-size: 0.7em;
-            
-                span {
-                    color: $secondary-color;
+                    span {
+                        color: $secondary-color;
+                    }
                 }
             }
         }
     }
 }
-
 
 
