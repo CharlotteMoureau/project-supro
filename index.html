@@ -36,7 +36,13 @@
                     <img src="public/img/icons/user.png" alt="user profile">
                     <img src="public/img/icons/heart.png" alt="favourites">
                     <img src="public/img/icons/shopping-cart.png" alt="shopping-cart">
-                    <img src="public/img/icons/menu.png" alt="menu icon">
+                    <div class="navBar">
+                        <button class="hamburger hamburger--spin" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -317,4 +323,10 @@
             </section>
         </footer>
     </body>
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("is-active");
+        });
+    </script>
 </html>

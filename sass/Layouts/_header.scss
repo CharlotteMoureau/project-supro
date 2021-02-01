@@ -19,7 +19,7 @@ header {
       justify-content: flex-start;
       align-items: center;
       img {
-        width: 60%;
+        height: 25px;
         padding-left: 5%
       }
     }
@@ -33,7 +33,7 @@ header {
       width: auto;
       height: auto;
       img {
-        width: 60%;
+        width: 25px;
       }
       input {
         display: none;
@@ -44,8 +44,9 @@ header {
       justify-items: center;
       align-items: center;
       grid-template-columns: repeat(4, 1fr);
-      img {
-        width: 50%;
+      img, .navBar {
+        width: 25px;
+        height: 25px;
       }
     }
   }
@@ -57,7 +58,7 @@ header {
     min-height: 6.14vh;
     .menu {
       display: grid;
-      grid-template-columns: 7fr 1fr 2fr;
+      grid-template-columns: 8fr 1fr 4fr;
       .supro {
         img {
           width: 20%;
@@ -67,7 +68,8 @@ header {
       .input {
         justify-content: flex-end;
         img {
-          width: 30%;
+          width: 25px;
+          height: 25px;
           margin-right: 7px;
         }
       }
@@ -75,7 +77,8 @@ header {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         img {
-          width: 60%;
+          width: 25px;
+          height: 25px;
         }
       }
     }
@@ -135,6 +138,10 @@ header {
         align-items: center;
         width: 100%;
         height: 100%;
+        img {
+          width: 17px;
+          height: 17px;
+        }
       }
       .input-search {
         display: flex;
@@ -145,9 +152,6 @@ header {
         height: 3vh;
         background-color: $quinary-color;
         border-radius: 3vh;
-        img {
-          width: 7%;
-        }
         input {
           display: block;
           width: 70%;
@@ -158,8 +162,9 @@ header {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin-right: 20%;
-        img {
-          width: 40%;
+        img, .navBar {
+          width: 17px;
+          height: 17px;
           padding: 0;
         }
       }
