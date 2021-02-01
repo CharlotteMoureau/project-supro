@@ -44,28 +44,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-Header {
+header {
   font-family: 'Roboto', sans-serif;
   border-bottom: 2px solid #F2EDE9; }
-  Header .menu {
+  header .menu {
     display: grid;
     grid-template-columns: 4fr 1fr 5fr;
     padding: 2.5%;
     margin-top: 5%; }
-    Header .menu .supro img {
+    header .menu .supro img {
       width: 60%;
       padding-left: 5%; }
-    Header .menu nav {
+    header .menu nav {
       display: none; }
-    Header .menu .input img {
+    header .menu .input img {
       width: 60%; }
-    Header .menu .input input {
+    header .menu .input input {
       display: none; }
-    Header .menu .user {
+    header .menu .user {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       margin-right: 4%; }
-      Header .menu .user img {
+      header .menu .user img {
         width: 50%; }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
@@ -738,19 +738,67 @@ footer {
       .shop .nav ul li {
         padding-bottom: 5%;
         font-size: 0.8em; }
-    .shop .nav img {
+    .shop .nav .slidecontainer {
       width: 100%; }
+      .shop .nav .slidecontainer .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 10px;
+        background: #f68773;
+        outline: none;
+        margin-bottom: 8%; }
+      .shop .nav .slidecontainer .slider::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: none;
+        box-shadow: 0 0 2px 1px #999;
+        cursor: pointer; }
     .shop .nav p {
       font-size: small;
       padding-bottom: 5%; }
     .shop .nav .color {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 9fr 1fr;
       row-gap: 15px;
       margin-top: 5%; }
       .shop .nav .color .color-dot i {
-        padding-right: 5%;
+        padding-right: 2%;
         padding-bottom: 5%; }
+      .shop .nav .color .container {
+        display: block;
+        position: relative;
+        cursor: pointer; }
+        .shop .nav .color .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+          .shop .nav .color .container input:checked ~ .checkmark {
+            border: 2px solid #222; }
+          .shop .nav .color .container input:checked ~ .checkmark:after {
+            display: block; }
+        .shop .nav .color .container .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          border: 2px solid #999; }
+          .shop .nav .color .container .checkmark::after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 7px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid #222;
+            border-width: 0 3px 3px 0;
+            border: solid #222;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg); }
       .shop .nav .color .input {
         text-align: right; }
         .shop .nav .color .input .fa-check-square {
