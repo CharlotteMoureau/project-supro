@@ -305,7 +305,7 @@ footer {
   .about .no-drama {
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 20%; }
+    margin-bottom: 15%; }
     .about .no-drama p {
       color: #999; }
     .about .no-drama .video {
@@ -315,7 +315,7 @@ footer {
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
-      background-image: url("/home/charlotte/Documents/BeCode/Semaine-4/project-supro/images/about-Charlotte/resources/video-img.jpg"); }
+      background-image: url("../../images/about-Charlotte/resources/video-img.jpg"); }
       .about .no-drama .video .play, .about .no-drama .video h2, .about .no-drama .video h3 {
         position: absolute;
         color: #fff;
@@ -338,24 +338,26 @@ footer {
         font-size: 2em;
         font-weight: 400; }
     .about .no-drama .pros {
-      margin-top: 15%;
+      margin-top: 10%;
       margin-left: 5%;
       margin-right: 5%;
-      margin-bottom: 50%;
+      margin-bottom: 40%;
       display: grid;
-      grid-template-columns: 1fr 4fr 1fr 4fr;
-      row-gap: 25px; }
-      .about .no-drama .pros i {
-        color: #f68773;
-        padding-top: 50%;
-        padding: 5%; }
-      .about .no-drama .pros h3 {
-        font-size: small;
-        font-weight: 500;
-        margin-bottom: 5%; }
-      .about .no-drama .pros p {
-        font-size: small;
-        margin-top: 5%; }
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10%; }
+      .about .no-drama .pros .cell {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin-top: 20%; }
+        .about .no-drama .pros .cell i {
+          color: #f68773; }
+        .about .no-drama .pros .cell h3 {
+          font-size: small;
+          font-weight: 500;
+          margin-bottom: 5%; }
+        .about .no-drama .pros .cell p {
+          font-size: small;
+          margin-top: 5%; }
     .about .no-drama .technology h2 {
       text-align: center;
       font-weight: 500;
@@ -380,7 +382,7 @@ footer {
     .about .members .people {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 30px; }
+      column-gap: 30px; }
       .about .members .people img {
         width: 100%;
         margin-top: 20%;
@@ -394,12 +396,249 @@ footer {
     padding-right: 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
     align-items: center; }
     .about .brands img {
       width: 100%;
-      filter: invert(100%) sepia(0%) saturate(3113%) hue-rotate(5deg) brightness(84%) contrast(79%); }
+      filter: invert(57%) sepia(57%) saturate(5%) hue-rotate(23deg) brightness(97%) contrast(82%); }
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .about {
+    margin-top: 12%; }
+    .about .about-us section .description h1 {
+      margin-top: 5%;
+      font-size: 0.8em; }
+    .about .about-us section .description h2 {
+      margin-top: 3%;
+      margin-right: 20%;
+      font-size: 1.9em;
+      line-height: 1.2em; }
+    .about .about-us section .description p {
+      margin-top: 4%;
+      margin-left: 15%; }
+    .about .about-us section .co-founder {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 5%;
+      margin-right: 5%;
+      margin-bottom: 0; }
+      .about .about-us section .co-founder .quote img {
+        width: 16%;
+        margin-top: 0;
+        top: -25px;
+        left: -10px; }
+      .about .about-us section .co-founder .quote p {
+        margin-top: 0;
+        font-weight: 500;
+        font-size: larger;
+        line-height: 1.5em; }
+      .about .about-us section .co-founder h3 {
+        margin-top: 4%;
+        font-size: 0.7em; }
+      .about .about-us section .co-founder h2 {
+        font-size: larger;
+        margin-bottom: 8%; }
+      .about .about-us section .co-founder p {
+        line-height: 1.8em; }
+    .about .about-us section .big-moments {
+      margin-top: 12%;
+      margin-bottom: 5%; }
+      .about .about-us section .big-moments h2 {
+        font-size: 1.3em;
+        margin-bottom: 3%; }
+      .about .about-us section .big-moments p {
+        font-size: 0.7em;
+        line-height: 1.7em;
+        margin-right: 30%; }
+      .about .about-us section .big-moments .timeline {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 8%; }
+        .about .about-us section .big-moments .timeline h3 {
+          margin-top: 0;
+          font-size: 1.4em; }
+        .about .about-us section .big-moments .timeline p {
+          font-size: 0.8em;
+          margin-right: 0;
+          padding-bottom: 15%; }
+    .about .no-drama {
+      padding-bottom: 8%; }
+      .about .no-drama .video {
+        height: 420px; }
+        .about .no-drama .video .play {
+          width: 10%;
+          top: 65%; }
+        .about .no-drama .video h2 {
+          font-size: 2.7em; }
+        .about .no-drama .video h3 {
+          font-size: 1.6em;
+          font-weight: 500;
+          top: 27.5%; }
+      .about .no-drama .pros {
+        margin-top: 8%;
+        margin-bottom: 20%; }
+        .about .no-drama .pros .cell {
+          column-gap: 5%;
+          grid-template-columns: 1fr 5fr; }
+          .about .no-drama .pros .cell h3 {
+            margin-bottom: 1%;
+            font-size: 0.7em; }
+          .about .no-drama .pros .cell p {
+            margin-top: 0; }
+      .about .no-drama .technology h2 {
+        line-height: 1.5em; }
+      .about .no-drama .technology p {
+        font-size: 0.9em;
+        padding-bottom: 2%; }
+    .about .members {
+      padding-bottom: 15%; }
+      .about .members h2 {
+        font-size: 1.25em; }
+      .about .members .people {
+        grid-template-columns: repeat(3, 1fr); }
+        .about .members .people img {
+          margin-top: 15%;
+          margin-bottom: 5%; }
+        .about .members .people h3 {
+          font-size: 0.9em;
+          margin-bottom: 1%; }
+        .about .members .people p {
+          font-size: 0.7em; }
+    .about .brands {
+      grid-template-columns: repeat(6, 1fr);
+      margin-bottom: 20%; } }
+
+@media screen and (min-width: 1008px) {
+  .about {
+    margin-top: 8%; }
+    .about .almost-all, .about .about-us section .co-founder, .about .about-us section .big-moments, .about .no-drama, .about .members, .about .brands {
+      width: 60%;
+      max-width: 1360px;
+      margin-right: auto;
+      margin-left: auto; }
+    .about .about-us .top {
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
+      .about .about-us .top img {
+        grid-area: 1 / 2 / 2 / 3; }
+      .about .about-us .top .description {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 8%; }
+        .about .about-us .top .description h1 {
+          margin-top: 0; }
+        .about .about-us .top .description h2 {
+          font-size: 2.8em;
+          line-height: 1.2em;
+          margin-right: 30%;
+          margin-top: 2%; }
+        .about .about-us .top .description p {
+          margin-left: 10%;
+          margin-top: 5%;
+          font-size: 0.9em;
+          margin-right: 20%; }
+    .about .about-us section .co-founder {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 8%;
+      margin-top: 7.5%; }
+      .about .about-us section .co-founder img {
+        width: 75%; }
+      .about .about-us section .co-founder .quote img {
+        width: 16%;
+        margin-top: 0;
+        top: -50%;
+        left: -4%; }
+      .about .about-us section .co-founder .quote p {
+        margin-top: 0;
+        margin-right: 0;
+        font-size: 1.8em;
+        font-weight: 500; }
+      .about .about-us section .co-founder h3 {
+        margin-top: 7%; }
+      .about .about-us section .co-founder h2 {
+        margin-top: 3%;
+        font-size: 1.7em;
+        margin-bottom: 8%; }
+      .about .about-us section .co-founder p {
+        margin-right: 30%;
+        font-size: 0.9em;
+        line-height: 1.5em; }
+    .about .about-us section .big-moments {
+      margin-top: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 10%; }
+      .about .about-us section .big-moments h2 {
+        font-size: 2.9em; }
+      .about .about-us section .big-moments p {
+        margin-right: 25%;
+        font-size: 0.85em;
+        line-height: 1.7em; }
+      .about .about-us section .big-moments .timeline {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+        .about .about-us section .big-moments .timeline p {
+          margin-right: 0; }
+    .about .no-drama {
+      margin-bottom: 5%; }
+      .about .no-drama .video {
+        height: 450px; }
+        .about .no-drama .video .play {
+          width: 5.5%;
+          top: 65%; }
+        .about .no-drama .video h2 {
+          font-size: 3.7em; }
+        .about .no-drama .video h3 {
+          top: 27%;
+          font-size: 1.7em; }
+      .about .no-drama .pros {
+        margin-top: 8%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 5%;
+        margin-bottom: 12%; }
+      .about .no-drama .technology {
+        margin-left: 10%;
+        margin-right: 10%; }
+        .about .no-drama .technology h2 {
+          margin-left: 8%;
+          margin-right: 8%;
+          font-size: 1.8em;
+          line-height: 1.5em; }
+        .about .no-drama .technology .desktop {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 5%; }
+          .about .no-drama .technology .desktop p {
+            font-size: 0.95em; }
+    .about .members {
+      padding-bottom: 0;
+      margin-bottom: 5%; }
+      .about .members h2 {
+        font-size: 3.5em; }
+      .about .members .people {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0; }
+        .about .members .people div {
+          position: relative; }
+          .about .members .people div img {
+            width: 85%; }
+          .about .members .people div div {
+            width: 65%;
+            position: absolute;
+            background-color: #fff;
+            top: 80%; }
+        .about .members .people h3 {
+          margin-top: 8%;
+          font-weight: 500;
+          margin-bottom: 2%; }
+    .about .brands {
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 8%;
+      margin-bottom: 8%; } }
 
 .shop {
   font-family: 'Roboto', sans-serif;
@@ -439,12 +678,14 @@ footer {
       .shop .products div img {
         width: 90%;
         top: 0;
-        left: 0; }
+        left: 0;
+        transition: opacity .30s ease-in-out; }
       .shop .products div .hidden {
         opacity: 0;
         position: absolute; }
         .shop .products div .hidden:hover {
-          opacity: 1; }
+          opacity: 1;
+          transition: opacity .30s ease-in-out; }
       .shop .products div h3 {
         font-weight: 400;
         font-size: 0.88em;
@@ -599,7 +840,9 @@ footer {
 @media screen and (min-width: 1008px) {
   .shop {
     width: 60%;
-    margin: auto;
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0;
     display: grid;
     grid-template-columns: 2fr 5fr;

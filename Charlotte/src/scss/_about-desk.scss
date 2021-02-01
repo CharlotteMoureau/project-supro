@@ -1,0 +1,222 @@
+@import 'variables';
+
+@media screen and (min-width: 1008px) {
+    .about {
+        margin-top: 8%;
+        
+        .almost-all {
+            width: 60%;
+            max-width: 1360px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        .about-us {
+            section {
+                
+            }
+            .top {
+                width: 100%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                img {
+                    grid-area: 1 / 2 / 2 / 3;
+                }
+
+                .description {
+                    grid-area: 1 / 1 / 2 / 2;
+                    margin-left: 8%;
+
+                    h1 {
+                        margin-top: 0;
+                    }
+
+                    h2 {
+                        font-size: 2.8em;
+                        line-height: 1.2em;
+                        margin-right: 30%;
+                        margin-top: 2%;
+                    }
+                    
+                    p {
+                        margin-left: 10%;
+                        margin-top: 5%;
+                        font-size: 0.9em;
+                        margin-right: 20%;
+                    }
+                }
+            }
+            section {
+                .co-founder {
+                    @extend .almost-all;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-bottom: 8%;
+                    margin-top: 7.5%;
+                        
+                    img {
+                        width: 75%;
+                    }
+    
+                    .quote {
+                        
+                        img {
+                            width: 16%;
+                            margin-top: 0;
+                            top: -50%;
+                            left: -4%;
+                        }
+    
+                        p {
+                            margin-top: 0;
+                            margin-right: 0;
+                            font-size: 1.8em;
+                            font-weight: 500
+                        }
+                    }
+
+                    h3 {
+                        margin-top: 7%;
+                    }
+
+                    h2 {
+                       margin-top: 3%;
+                       font-size: 1.7em;
+                       margin-bottom: 8%;
+                    }
+
+                    p {
+                        margin-right: 30%;
+                        font-size: 0.9em;
+                        line-height: 1.5em;
+                    }
+                }
+            
+                .big-moments {
+                    @extend .almost-all;
+                    margin-top: 0;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    margin-bottom: 10%;
+                    
+                    h2 {
+                        font-size: 2.9em;
+                    }
+
+                    p {
+                        margin-right: 25%;
+                        font-size: 0.85em;
+                        line-height: 1.7em;
+                    }
+
+                    .timeline {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+
+                        p {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .no-drama {
+            @extend .almost-all;
+            margin-bottom: 5%;
+           
+            .video {
+                height: 450px;
+
+                .play {
+                    width: 5.5%;
+                    top: 65%;
+                }
+
+                h2 {
+                    font-size: 3.7em;
+                }
+
+                h3 {
+                    top: 27%;
+                    font-size: 1.7em
+                }
+            }
+
+            .pros {
+                margin-top: 8%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                margin-top: 5%;
+                margin-bottom: 12%;
+            }
+
+            .technology {
+                margin-left: 10%;
+                margin-right: 10%;
+
+                h2 {
+                    margin-left: 8%;
+                    margin-right: 8%;
+                    font-size: 1.8em;
+                    line-height: 1.5em;
+                }
+
+                .desktop {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 5%;
+
+                    p {
+                        font-size: 0.95em;
+                    }
+                }
+            }
+        }
+
+        .members {
+            @extend .almost-all;
+            padding-bottom: 0;
+            margin-bottom: 5%;
+            
+            h2 {
+                font-size: 3.5em;
+            }
+
+            .people {
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 0;
+
+                div {
+                    position: relative;
+
+                    img {
+                        width: 85%; 
+                    }
+
+                    div {
+                        width: 65%;
+                        position: absolute;
+                        background-color: $quinary-color;
+                        top: 80%;
+                    }
+                }
+
+                h3 {
+                    margin-top: 8%;
+                    font-weight: 500;
+                    margin-bottom: 2%;
+                }
+            }
+        }
+
+        .brands {
+            @extend .almost-all;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 8%;
+            margin-bottom: 8%;
+        }
+    }
+}

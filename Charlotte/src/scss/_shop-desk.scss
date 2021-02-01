@@ -1,7 +1,9 @@
 @media screen and (min-width: 1008px) {
     .shop {
         width: 60%;
-        margin: auto;
+        max-width: 1360px;
+        margin-right: auto;
+        margin-left: auto;
         padding: 0;
         display: grid;
         grid-template-columns: 2fr 5fr;
