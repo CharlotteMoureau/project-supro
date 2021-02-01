@@ -7,6 +7,13 @@
   width: 100%;
   height: auto;
   padding: 5em 1em 1em 1em;
+}
+.latest-news-txt {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  width: 100%;
+  height: auto;
   h2{
     font-size: 2em;
     margin-bottom: .5em;
@@ -32,7 +39,7 @@
     h4 {
       font-weight: 600;
       color: $primary-color;
-      margin-bottom: 1em;
+      margin-bottom: 2em;
     }
     h5 {
       font-weight: 400;
@@ -65,6 +72,8 @@
 @media (min-width: 640px) {
   .latest-news {
     padding: 3em;
+  }
+  .latest-news-txt {
     > a {
       position: relative;
       top: -3em;
@@ -95,19 +104,26 @@
     width: 100%;
     max-width: 1360px;
     margin: 0 auto;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 3em;
+    article {
+      width: auto;
+    }
+    img {
+      width: 100%;
+      margin: 0;
+    }
     .five {
       grid-column: 1 / span 1;
       grid-row: 1 / span 1;
     }
     .kering {
-      grid-column: 3 / span 1;
+      grid-column: 2 / span 1;
       grid-row: 1 / span 1;
     }
     .these {
-      grid-column: 5 / span 1;
+      grid-column: 3 / span 1;
       grid-row: 1 / span 1;
     }
     img {

@@ -496,11 +496,19 @@ Header .menu .user img {
   height: auto;
   padding: 5em 1em 1em 1em;
 }
-.latest-news h2 {
+
+.latest-news-txt {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  width: 100%;
+  height: auto;
+}
+.latest-news-txt h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
-.latest-news h4 {
+.latest-news-txt h4 {
   margin-bottom: 0.5em;
 }
 
@@ -523,7 +531,7 @@ Header .menu .user img {
 .latest-news-grid article h4 {
   font-weight: 600;
   color: #222;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .latest-news-grid article h5 {
   font-weight: 400;
@@ -555,7 +563,8 @@ Header .menu .user img {
   .latest-news {
     padding: 3em;
   }
-  .latest-news > a {
+
+  .latest-news-txt > a {
     position: relative;
     top: -3em;
     align-self: flex-end;
@@ -584,20 +593,27 @@ Header .menu .user img {
     width: 100%;
     max-width: 1360px;
     margin: 0 auto;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 3em;
+  }
+  .latest-news-grid article {
+    width: auto;
+  }
+  .latest-news-grid img {
+    width: 100%;
+    margin: 0;
   }
   .latest-news-grid .five {
     grid-column: 1/span 1;
     grid-row: 1/span 1;
   }
   .latest-news-grid .kering {
-    grid-column: 3/span 1;
+    grid-column: 2/span 1;
     grid-row: 1/span 1;
   }
   .latest-news-grid .these {
-    grid-column: 5/span 1;
+    grid-column: 3/span 1;
     grid-row: 1/span 1;
   }
   .latest-news-grid img {
@@ -653,7 +669,7 @@ Header .menu .user img {
     flex-direction: row;
   }
 
-  div {
+  .keep-connected-txt, .keep-connected-form {
     margin-right: 1em;
   }
 
@@ -812,7 +828,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 .homepage h2 {
