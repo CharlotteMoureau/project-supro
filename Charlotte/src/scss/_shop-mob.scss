@@ -59,6 +59,7 @@
                 width: 90%;
                 top: 0;
                 left: 0;
+                transition: opacity .30s ease-in-out;
             }
 
             .hidden {
@@ -67,6 +68,7 @@
                 
                 &:hover {
                     opacity: 1;
+                    transition: opacity .30s ease-in-out;
                 }
             }
 

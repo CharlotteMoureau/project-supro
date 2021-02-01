@@ -678,12 +678,14 @@ footer {
       .shop .products div img {
         width: 90%;
         top: 0;
-        left: 0; }
+        left: 0;
+        transition: opacity .30s ease-in-out; }
       .shop .products div .hidden {
         opacity: 0;
         position: absolute; }
         .shop .products div .hidden:hover {
-          opacity: 1; }
+          opacity: 1;
+          transition: opacity .30s ease-in-out; }
       .shop .products div h3 {
         font-weight: 400;
         font-size: 0.88em;
