@@ -1,0 +1,114 @@
+// Section 2 - Top Sellers
+.top-sellers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5em 1em;
+  .top-seller-txt {
+    width: 100%;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4 {
+    margin: 1em 0;
+  }
+  article {
+    margin: 1.5em 0;
+  }
+}
+.bag, .glasses {
+  img {
+    width: calc(75vw - 2em);
+    height: auto;
+  }
+}
+.blouse, .shoes1 {
+  img {
+    width: calc(100vw - 2em);
+    height: auto;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 640px) {
+  .top-sellers {
+    padding: 5em 3em;
+  }
+  .blouse, .shoes1 {
+    display: flex;
+    flex-direction: row-reverse;
+    img {
+      width: calc(80vw - 6em);
+    }
+    .top-txt {
+      padding-top: 4em;
+    }
+  }
+  .bag, .glasses {
+    img {
+      width: calc(50vw - 6em);
+    }
+    .top-txt {
+      padding-top: 1em;
+    }
+  }
+}
+
+@media (min-width: 1008px) {
+  .top-sellers {
+    display: grid;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    height: auto;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      "top-seller-txt top-seller-txt top-seller-txt top-seller-txt top-seller-txt top-seller-txt top-seller-txt top-seller-txt"
+      ". . . blouse blouse blouse blouse blouse"
+      "bag bag . blouse blouse blouse blouse blouse"
+      "bag bag . blouse blouse blouse blouse blouse"
+      "bag bag . blouse blouse blouse blouse blouse"
+      "bag bag . blouse blouse blouse blouse blouse"
+      ". . . . . . . ."
+      "shoes1 shoes1 shoes1 shoes1 shoes1 . . ."
+      "shoes1 shoes1 shoes1 shoes1 shoes1 . glasses glasses"
+      "shoes1 shoes1 shoes1 shoes1 shoes1 . glasses glasses"
+      "shoes1 shoes1 shoes1 shoes1 shoes1 . glasses glasses"
+      "shoes1 shoes1 shoes1 shoes1 shoes1 . glasses glasses";
+    article {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .top-seller-txt {
+    grid-area: top-seller-txt;
+  }
+  .bag, .glasses {
+    img {
+      width: 325px;
+      height: 325px;
+    }
+  }
+  .blouse, .shoes1 {
+    img {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  .bag {
+    grid-area: bag;
+  }
+  .blouse {
+    grid-area: blouse;
+  }
+  .shoes1 {
+    grid-area: shoes1;
+  }
+  .glasses {
+    grid-area: glasses;
+  }
+}
+
