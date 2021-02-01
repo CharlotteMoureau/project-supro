@@ -924,7 +924,7 @@ main a {
 
 .winter {
   height: 91.14vh;
-  background: no-repeat url(.../img/homepage/sl3-1.jpg) center;
+  background: no-repeat url("../../img/homepage/sl3-1.jpg") center;
   background-size: cover;
 }
 .winter h2 {
@@ -932,17 +932,17 @@ main a {
 }
 
 .hairband {
-  background: no-repeat url(.../img/homepage/banner_h1_1.jpg) right center;
+  background: no-repeat url("../../img/homepage/banner_h1_1.jpg") right center;
   background-size: cover;
 }
 
 .hairband-2 {
-  background: no-repeat url(.../img/homepage/banner_h1_2.jpg) center;
+  background: no-repeat url("../../img/homepage/banner_h1_2.jpg") center;
   background-size: cover;
 }
 
 .corduroy {
-  background: no-repeat url(.../img/homepage/banner_h1_3.jpg) left;
+  background: no-repeat url("../../img/homepage/banner_h1_3.jpg") left;
   background-size: cover;
   text-align: right;
 }
