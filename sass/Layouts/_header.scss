@@ -1,25 +1,124 @@
 //Header
 
 Header {
-  border-bottom: 1px solid $quaternary-color;
+  border-bottom: 2px solid $quaternary-color;
   .menu {
-    display: flex;
+    display: grid;
+    grid-template-columns: 4fr 1fr 5fr;
     padding: 2.5%;
-    img {
-      width: 25%;
+    margin-top: 5%;
+    .supro {
+      img {
+        width: 60%;
+        padding-left: 5%
+      }
     }
     nav {
       display: none;
     }
     .input {
-      display: none;
+      img {
+        width: 60%;
+      }
+      input {
+        display: none;
+      }
     }
     .user {
-      display: flex;
-      justify-content: flex-end;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin-right: 4%;
       img {
-        width: 8%;
-        margin: 4%;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  header {
+    .menu {
+      display: grid;
+      grid-template-columns: 7fr 1fr 2fr;
+      margin-top: 1%;
+      padding-right: 5%;
+      .supro {
+        img {
+          width: 20%;
+          padding: 0;
+        }
+      }
+      .input {
+        img {
+          width: 30%;
+          padding-left: 50%;
+        }
+      }
+      .user {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        img {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  header {
+    margin-right: 1%;
+    margin-left: 1%;
+    .menu {
+      display: grid;
+      grid-template-columns: 4fr 18fr 6fr 4fr;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      padding: 0;
+      .supro {
+        img {
+          width: 40%;
+        }
+      }
+      nav{
+        display: grid;
+        grid-template-columns: repeat(17, 1fr);
+        div {
+          grid-area: 1 / 1 / 2 / 10;
+          ul {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            li {
+              text-align: center;
+              a {
+                text-decoration: none;
+                color: $primary-color;
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+      }
+      .input {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        img {
+          width: 12.5%;
+        }
+        input {
+          display: block;
+          width: 70%;
+          border: none;
+        }
+      }
+      .user {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-right: 20%;
+        img {
+          width: 40%;
+          padding: 0;
+        }
       }
     }
   }

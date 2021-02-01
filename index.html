@@ -11,22 +11,26 @@
     <body>
         <header>
             <div class="menu">
-                <img src="public/img/homepage/logo_supro.svg" alt="Supro. logo">
+                <div class="supro">
+                    <img src="public/img/homepage/logo_supro.svg" alt="Supro. logo">
+                </div>
                 <nav class="not-mobile">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">Collection</a></li>
-                        <li><a href="">Pages</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">Collection</a></li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
                 </nav>
                 <div class="input">
                     <input type="text" placeholder="Search Searching...">
+                    <img src="public/img/icons/magnifying.png" alt="magnifying glass">
                 </div>
                 <div class="user">
-                    <img src="public/img/icons/magnifying.png" alt="magnifying glass">
                     <img src="public/img/icons/user.png" alt="user profile">
                     <img src="public/img/icons/heart.png" alt="favourites">
                     <img src="public/img/icons/shopping-cart.png" alt="shopping-cart">
@@ -57,8 +61,10 @@
                 </article>
             </section>
             <section class="top-sellers">
-                <h2>Top Sellers</h2>
-                <h4>Browse the huge variety of ou products</h4>
+                <div class="top-seller-txt">
+                    <h2>Top Sellers</h2>
+                    <h4>Browse the huge variety of ou products</h4>
+                </div>
                 <article class="bag">
                     <img src="public/img/homepage/bsl1.jpg" alt="bag">
                     <div class="top-txt">
@@ -179,34 +185,38 @@
                 <a href="#">Discover more</a>
             </section>
             <section class="deal-day">
-                <h4>Deal of the day</h4>
-                <h2>Hobo Shopper Bag</h2>
-                <h4><span style="padding-left: 1em; text-decoration: line-through;">$79.90</span> <span style="color: #222;">$39.90</span></h4>
-                <h5>Save 50%</h5>
-                <ul>
-                    <li>
-                        <h2>- 179</h2>
-                        <h4>Days</h4>
-                    </li>
-                    <li>
-                        <h2>- 20</h2>
-                        <h4>Hours</h4>
-                    </li>
-                    <li>
-                        <h2>- 43</h2>
-                        <h4>Minutes</h4>
-                    </li>
-                    <li>
-                        <h2>- 33</h2>
-                        <h4>Seconds</h4>
-                    </li>
-                </ul>
-                <a href="#">Shop Now</a>
+                <div class="deal-day-div">
+                    <h4>Deal of the day</h4>
+                    <h2>Hobo Shopper Bag</h2>
+                    <h4><span style="padding-left: 1em; text-decoration: line-through;">$79.90</span> <span style="color: #222;">$39.90</span></h4>
+                    <h5>Save 50%</h5>
+                    <ul>
+                        <li>
+                            <h2>- 179</h2>
+                            <h4>Days</h4>
+                        </li>
+                        <li>
+                            <h2>- 20</h2>
+                            <h4>Hours</h4>
+                        </li>
+                        <li>
+                            <h2>- 43</h2>
+                            <h4>Minutes</h4>
+                        </li>
+                        <li>
+                            <h2>- 33</h2>
+                            <h4>Seconds</h4>
+                        </li>
+                    </ul>
+                    <a href="#">Shop Now</a>
+                </div>
             </section>
             <section class="latest-news">
-                <h2>Latest News</h2>
-                <h4>Our recent articles about fashion ideas & products</h4>
-                <a href="#">See all news</a>
+                <div class="latest-news-txt">
+                    <h2>Latest News</h2>
+                    <h4>Our recent articles about fashion ideas & products</h4>
+                    <a href="#">See all news</a>
+                </div>
                 <div class="latest-news-grid">
                     <article class="five">
                         <img src="public/img/homepage/blog1.jpg" alt="">
@@ -229,11 +239,11 @@
                 </div>
             </section>
             <section class="keep-connected">
-                <div>
+                <div class="keep-connected-txt">
                     <h2>Keep Connected</h2>
                     <h4>Get updates by suscribe our weekly newsletter</h4>
                 </div>
-                <div>
+                <div class="keep-connected-form">
                     <form action="">
                         <input id="email" type="email" placeholder="Email Address">
                         <label for="email">SUSCRIBE</label>
@@ -284,6 +294,7 @@
                         <li>English <i class="fas fa-angle-down"></i></li>
                     </ul>
                 </div>
+
                 <div>
                     <h3>CURRENCY</h3>
                     <ul>
@@ -292,9 +303,15 @@
                 </div>
             </section>
             <section class="propper">
-                <p>&copy; <span>Supro</span>. All rights reserved 2019</p>
-                <h2>Privacy Policy</h2>
-                <h2>Term of Use</h2>
+                <div>
+                    <div>
+                        <p>&copy; <span>Supro</span>. All rights reserved 2019</p>
+                    </div>
+                    <div>
+                        <h2>Privacy Policy</h2>
+                        <h2>Term of Use</h2>
+                    </div>
+                </div>
             </section>
         </footer>
     </body>

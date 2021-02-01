@@ -1,0 +1,134 @@
+// Section 5 - Latest News
+.latest-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  height: auto;
+  padding: 5em 1em 1em 1em;
+}
+.latest-news-txt {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  width: 100%;
+  height: auto;
+  h2{
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+  h4 {
+    margin-bottom: .5em;
+  }
+}
+.latest-news-grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  article {
+    width: auto;
+    height: auto;
+    margin: 1em 0 2em 0;
+    img {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    h4 {
+      font-weight: 600;
+      color: $primary-color;
+      margin-bottom: 2em;
+    }
+    h5 {
+      font-weight: 400;
+      color: $secondary-color;
+      margin-bottom: .5em;
+    }
+    span {
+      font-weight: 600;
+      color: $tertiary-color;
+      margin-right: 1em;
+    }
+    a {
+      padding-bottom: 1em;
+    }
+  }
+  .five {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .kering {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .these {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+}
+
+@media (min-width: 640px) {
+  .latest-news {
+    padding: 3em;
+  }
+  .latest-news-txt {
+    > a {
+      position: relative;
+      top: -3em;
+      align-self: flex-end;
+    }
+  }
+  .latest-news-grid {
+    grid-template-rows: 1.5fr .8fr;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2em;
+    .five {
+      grid-column: 1 / span 4;
+      grid-row: 1 / span 1;
+    }
+    .kering {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 1;
+    }
+    .these {
+      grid-column: 3 / span 2;
+      grid-row: 2 / span 1;
+    }
+  }
+}
+
+@media (min-width: 1008px) {
+  .latest-news-grid {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3em;
+    article {
+      width: auto;
+    }
+    img {
+      width: 100%;
+      margin: 0;
+    }
+    .five {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+    }
+    .kering {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+    }
+    .these {
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+    }
+    img {
+      max-width: 384px;
+      max-height: 384px;
+    }
+  }
+}
