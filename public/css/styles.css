@@ -451,7 +451,7 @@ header .menu .user img {
   height: 50vh;
   justify-content: center;
   align-items: center;
-  background: no-repeat url(../img/homepage/deals_image.jpg) center right -700px;
+  background: no-repeat url("../../img/homepage/deals_image.jpg") center right -700px;
 }
 
 .deal-day-div {
@@ -505,7 +505,7 @@ header .menu .user img {
 @media (min-width: 640px) {
   .deal-day {
     height: 50vh;
-    background: no-repeat url(../img/homepage/deals_image.jpg) center right -300px;
+    background: no-repeat url("../../img/homepage/deals_image.jpg") center right -300px;
     background-size: 200%;
   }
 
