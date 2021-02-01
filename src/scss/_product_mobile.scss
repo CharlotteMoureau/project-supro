@@ -78,6 +78,10 @@
                         justify-content: space-around;
                     }
 
+                    .picture:hover {
+                        opacity: 1.0;
+                    }
+
                     #hide-a-cover {
                         display: none;
                     }
@@ -153,9 +157,13 @@
                 .buttons {
                     padding-bottom: 3%;
                     
-                    .little-buttons {
+                    .button-mobile {
                         width: 100%;
                         height: auto;
+                    }
+
+                    .button-tablet-desktop {
+                        display: none;
                     }
 
                 }

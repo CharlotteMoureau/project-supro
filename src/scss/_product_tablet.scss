@@ -72,10 +72,10 @@
                     width: 75%;
                 
                     .picture {
-                        width: 100%;
+                        width: 90%;
                         height: auto;
                         margin-top: 10%;
-                        padding-right: 4%;
+                        padding-left: 20%;
                         justify-content: space-around;
                     }
 
@@ -156,7 +156,11 @@
                 .buttons {
                     padding-bottom: 3%;
                     
-                    .little-buttons {
+                    .button-mobile {
+                        display: none;
+                    }
+
+                    .button-tablet-desktop {
                         width: 100%;
                         height: auto;
                     }
@@ -177,7 +181,6 @@
                     color: $primary-color;
                     font-size: 120%;
                     padding: 3%;
-                    
                     padding-bottom: 10%;
                     
                     i {
