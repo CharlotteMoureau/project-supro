@@ -6,6 +6,9 @@ main {
   flex-flow: column;
   max-width: 100vw;
   height: auto;
+  a {
+    text-transform: uppercase;
+  }
 }
 .homepage {
   display: flex;
@@ -49,7 +52,7 @@ main {
   }
 }
 .winter {
-  height: 95vh;
+  height: 91.14vh;
   background: no-repeat url(../img/homepage/sl3-1.jpg) center;
   background-size: cover;
   h2 {
@@ -72,7 +75,7 @@ main {
 
 @media (min-width: 640px) {
   .winter {
-    height: 90vh;
+    min-height: 93.86vh;
   }
   .hairband, .hairband-2, .corduroy {
     height: 33.33vh;
@@ -80,12 +83,16 @@ main {
 }
 
 @media (min-width: 1008px) {
+  .winter {
+    min-height: 50vh;
+  }
   .homepage {
     align-items: flex-start;
     flex-flow: row wrap;
   }
   .hairband, .hairband-2, .corduroy {
     width: calc(100vw / 3);
+    min-height: 25vh;
   }
 }
 

@@ -17,7 +17,6 @@ h4 {
 }
 
 a {
-  text-transform: uppercase;
   font-size: 1em;
   color: #222;
 }
@@ -26,51 +25,76 @@ ul {
   list-style: none;
 }
 
-Header {
-  border-bottom: 2px solid #F2EDE9;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 8.86vh;
+  background-color: #fff;
 }
-Header .menu {
+header .menu {
   display: grid;
+  width: 100%;
+  height: 100%;
   grid-template-columns: 4fr 1fr 5fr;
+  grid-template-rows: 1fr;
   padding: 2.5%;
-  margin-top: 5%;
 }
-Header .menu .supro img {
+header .menu .supro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .menu .supro img {
   width: 60%;
   padding-left: 5%;
 }
-Header .menu nav {
+header .menu nav {
   display: none;
 }
-Header .menu .input img {
+header .menu .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+header .menu .input img {
   width: 60%;
 }
-Header .menu .input input {
+header .menu .input input {
   display: none;
 }
-Header .menu .user {
+header .menu .user {
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  margin-right: 4%;
 }
-Header .menu .user img {
+header .menu .user img {
   width: 50%;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
+  header {
+    padding: 0 10px;
+    min-height: 6.14vh;
+  }
   header .menu {
     display: grid;
     grid-template-columns: 7fr 1fr 2fr;
-    margin-top: 1%;
-    padding-right: 5%;
   }
   header .menu .supro img {
     width: 20%;
     padding: 0;
   }
+  header .menu .input {
+    justify-content: flex-end;
+  }
   header .menu .input img {
     width: 30%;
-    padding-left: 50%;
+    margin-right: 7px;
   }
   header .menu .user {
     display: grid;
@@ -82,32 +106,47 @@ Header .menu .user img {
 }
 @media screen and (min-width: 1008px) {
   header {
-    margin-right: 1%;
-    margin-left: 1%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
   }
   header .menu {
     display: grid;
     grid-template-columns: 4fr 18fr 6fr 4fr;
-    margin-top: 2%;
-    margin-bottom: 2%;
     padding: 0;
+  }
+  header .menu .supro {
+    justify-content: center;
   }
   header .menu .supro img {
     width: 40%;
   }
   header .menu nav {
-    display: grid;
-    grid-template-columns: repeat(17, 1fr);
+    display: flex;
+    min-width: 30vw;
+    justify-content: center;
+    align-items: center;
   }
   header .menu nav div {
-    grid-area: 1/1/2/10;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
   }
   header .menu nav div ul {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
   }
   header .menu nav div ul li {
+    display: block;
     text-align: center;
+    margin-right: 3%;
   }
   header .menu nav div ul li a {
     text-decoration: none;
@@ -115,13 +154,26 @@ Header .menu .user img {
     font-size: 0.9em;
   }
   header .menu .input {
-    display: grid;
-    grid-template-columns: 4fr 3fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
-  header .menu .input img {
-    width: 12.5%;
+  header .menu .input-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 85%;
+    height: 3vh;
+    background-color: #fff;
+    border-radius: 3vh;
   }
-  header .menu .input input {
+  header .menu .input-search img {
+    width: 7%;
+  }
+  header .menu .input-search input {
     display: block;
     width: 70%;
     border: none;
@@ -822,6 +874,9 @@ main {
   max-width: 100vw;
   height: auto;
 }
+main a {
+  text-transform: uppercase;
+}
 
 .homepage {
   display: flex;
@@ -868,7 +923,7 @@ main {
 }
 
 .winter {
-  height: 95vh;
+  height: 91.14vh;
   background: no-repeat url(../img/homepage/sl3-1.jpg) center;
   background-size: cover;
 }
@@ -894,7 +949,7 @@ main {
 
 @media (min-width: 640px) {
   .winter {
-    height: 90vh;
+    min-height: 93.86vh;
   }
 
   .hairband, .hairband-2, .corduroy {
@@ -902,6 +957,10 @@ main {
   }
 }
 @media (min-width: 1008px) {
+  .winter {
+    min-height: 50vh;
+  }
+
   .homepage {
     align-items: flex-start;
     flex-flow: row wrap;
@@ -909,6 +968,7 @@ main {
 
   .hairband, .hairband-2, .corduroy {
     width: calc(100vw / 3);
+    min-height: 25vh;
   }
 }
 
