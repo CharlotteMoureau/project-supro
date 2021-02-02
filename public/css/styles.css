@@ -922,7 +922,6 @@ nav.mobile .mobile-div p {
 }
 .images img {
   width: 100%;
-  height: 100%;
 }
 
 @media (min-width: 640px) {
