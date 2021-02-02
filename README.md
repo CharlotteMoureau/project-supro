@@ -1,6 +1,6 @@
 # Project-Supro
 
-This was a group project (made with [Asceline Hogge](https://github.com/AscelineHogge), [Charlotte Moureau](https://github.com/CharlotteMoureau) and [François Royen](https://github.com/francoisRoyen)) carried from the 25th of January to the 2nd of February 2021 as part of the BeCode Liège's Junior Web Developer programm. We were tasked to make a website for a fake client "John Lafrite". The client gave us a strict design to follow for his [e-commerce website](https://francoisroyen.github.io/project-supro/), but gave us free range for the animations.
+This was a group project (made with [Asceline Hogge](https://github.com/AscelineHogge), [Charlotte Moureau](https://github.com/CharlotteMoureau) and [François Royen](https://github.com/francoisRoyen)) carried from the 25th of January to the 2nd of February 2021 as part of the BeCode Liège's Junior Web Developer programm. We were tasked to make a website for a fake client "John Lafrite". The client gave us a strict design to follow for his e-commerce website, but gave us free range for the animations.
 
 ## Learning objectives
 
@@ -49,8 +49,8 @@ Colors
 
 - We decided to go for a mobile-first approach as mobile is the most popular device. Mobile-first method also makes up for a faster download time and shortens the code significantly (which then allows fewer bugs). 
 - We used Sass as our preprocesser for CSS. 
-- François did the homepage and the mobile menu, Charlotte did the Shop page and the About page and Asceline did the Single product page and the Contact page.
+- François did the [homepage](https://francoisroyen.github.io/project-supro/) and the mobile menu, Charlotte did the [Shop](https://francoisroyen.github.io/project-supro/shop.html) page and the [About](https://francoisroyen.github.io/project-supro/about.html) page and Asceline did the [Single product](https://francoisroyen.github.io/project-supro/product.html) page and the [Contact](https://francoisroyen.github.io/project-supro/contact.html) page.
 
 ## The final result:
 
-[Here!](https://francoisroyen.github.io/project-supro/)
+[See the whole website here!](https://francoisroyen.github.io/project-supro/)
