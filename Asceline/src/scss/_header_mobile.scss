@@ -1,0 +1,43 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid $quaternary-color;
+    
+    .menu {
+        display: grid;
+        grid-template-columns: 4fr 1fr 5fr;
+        padding: 2.5%;
+        margin-top: 5%;
+        
+        .supro {
+
+            img {
+                width: 60%;
+                padding-left: 5%
+            }
+        }
+        
+        nav {
+            display: none;
+        }
+
+        .input {
+            img {
+                width: 60%;
+            }
+            input {
+                display: none;
+            }
+        }
+
+        .user {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-right: 4%;
+            
+            img {
+                width: 50%;
+           }              
+        }
+    }
+}
+
