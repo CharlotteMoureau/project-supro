@@ -201,9 +201,6 @@ nav.mobile {
           }
         }
       }
-      nav.mobile {
-        display: none;
-      }
       .input {
         display: flex;
         justify-content: center;
@@ -239,7 +236,7 @@ nav.mobile {
           height: 17px;
           padding: 0;
         }
-        .navBar {
+        .navBar, .mobile-div, .mobile-div > ul, .mobile-div > h3, .mobile-div > p  {
           display: none;
         }
       }

@@ -332,9 +332,6 @@ nav.mobile .mobile-div p {
     color: #222;
     font-size: 0.9em;
   }
-  header .menu nav.mobile {
-    display: none;
-  }
   header .menu .input {
     display: flex;
     justify-content: center;
@@ -371,7 +368,7 @@ nav.mobile .mobile-div p {
     height: 17px;
     padding: 0;
   }
-  header .menu .user .navBar {
+  header .menu .user .navBar, header .menu .user .mobile-div, header .menu .user .mobile-div > ul, header .menu .user .mobile-div > h3, header .menu .user .mobile-div > p {
     display: none;
   }
 }
