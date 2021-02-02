@@ -1141,7 +1141,11 @@ table {
 
 header {
   font-family: 'Roboto', sans-serif;
-  border-bottom: 2px solid #F2EDE9; }
+  border-bottom: 2px solid #F2EDE9;
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+  top: 0; }
   header .menu {
     display: grid;
     grid-template-columns: 4fr 1fr 5fr;
@@ -1150,7 +1154,7 @@ header {
     header .menu .supro img {
       width: 60%;
       padding-left: 5%; }
-    header .menu nav {
+    header .menu .not-mobile {
       display: none; }
     header .menu .input img {
       width: 60%; }
@@ -1162,6 +1166,63 @@ header {
       margin-right: 4%; }
       header .menu .user img {
         width: 50%; }
+  header nav.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10vh;
+    right: -101vw;
+    z-index: 2;
+    width: 100vw;
+    height: calc(100vh - 10vh);
+    background-color: #fff; }
+    header nav.mobile .mobile-div {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      max-width: 650px;
+      height: 100%;
+      padding: 2em; }
+      header nav.mobile .mobile-div ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 2em; }
+        header nav.mobile .mobile-div ul li {
+          display: flex;
+          width: 100%;
+          height: calc(100% / 6);
+          font-size: 1.5em;
+          margin-bottom: .5em; }
+          header nav.mobile .mobile-div ul li:last-child {
+            margin-bottom: 0; }
+        header nav.mobile .mobile-div ul a {
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: #999;
+          border-bottom: 1px #999 solid;
+          background: url("../../images/icons/menu-mobile.png") top right no-repeat;
+          background-size: 10%; }
+      header nav.mobile .mobile-div h3 {
+        color: #222;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin-bottom: 2em; }
+      header nav.mobile .mobile-div p {
+        font-size: 1em;
+        color: #999; }
+  header .is-visible {
+    transform: translateX(-101vw);
+    transition-delay: 0.12s;
+    transition-duration: 0.22s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   header .menu {
@@ -1179,12 +1240,18 @@ header {
       display: grid;
       grid-template-columns: repeat(4, 1fr); }
       header .menu .user img {
-        width: 60%; } }
+        width: 60%; }
+  header nav.mobile {
+    top: 5vh;
+    height: calc(100vh - 5vh); }
+    header nav.mobile .mobile-div ul a {
+      background-size: 5%; } }
 
 @media screen and (min-width: 1008px) {
   header {
     margin-right: 1%;
-    margin-left: 1%; }
+    margin-left: 1%;
+    position: initial; }
     header .menu {
       display: grid;
       grid-template-columns: 4fr 18fr 6fr 4fr;
@@ -1193,24 +1260,35 @@ header {
       padding: 0; }
       header .menu .supro img {
         width: 40%; }
-      header .menu nav {
+      header .menu .not-mobile {
         display: grid;
-        grid-template-columns: repeat(17, 1fr); }
-        header .menu nav div {
+        grid-template-columns: repeat(17, 1fr);
+        align-items: center; }
+        header .menu .not-mobile div {
           grid-area: 1 / 1 / 2 / 10; }
-          header .menu nav div ul {
+          header .menu .not-mobile div ul {
             display: grid;
             grid-template-columns: repeat(6, 1fr); }
-            header .menu nav div ul li {
+            header .menu .not-mobile div ul li {
               text-align: center; }
-              header .menu nav div ul li a {
+              header .menu .not-mobile div ul li a {
                 text-decoration: none;
                 color: #222;
                 font-family: 'Roboto', sans-serif;
                 font-size: 0.9em; }
+                header .menu .not-mobile div ul li a::after {
+                  display: block;
+                  content: '';
+                  border-bottom: solid 3px #F2EDE9;
+                  padding-bottom: 5px;
+                  transform: scaleX(0);
+                  transition: transform 250ms ease-in-out; }
+                header .menu .not-mobile div ul li a:hover::after {
+                  transform: scaleX(1); }
       header .menu .input {
         display: grid;
-        grid-template-columns: 4fr 3fr; }
+        grid-template-columns: 4fr 3fr;
+        align-items: center; }
         header .menu .input img {
           width: 12.5%; }
         header .menu .input input {
@@ -1220,10 +1298,13 @@ header {
       header .menu .user {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-right: 20%; }
+        margin-right: 20%;
+        align-items: center; }
         header .menu .user img {
           width: 40%;
-          padding: 0; } }
+          padding: 0; }
+      header .menu .navBar, header .menu .mobile-div, header .menu .mobile-div > ul, header .menu .mobile-div > h3, header .menu .mobile-div > p {
+        display: none; } }
 
 footer {
   font-family: 'Roboto', sans-serif;

@@ -30,6 +30,19 @@
                                         
                 }
             }
-        }  
+        } 
+        
+        nav.mobile {
+            top: 5vh;
+            height: calc(100vh - 5vh);
+
+            .mobile-div {
+                ul {
+                    a {
+                        background-size: 5%;
+                    }
+                }
+            }
+        }
     }
 }
