@@ -33,6 +33,21 @@
                 </div>
             </nav>
 
+            <nav class="mobile">
+                <div class="mobile-div">
+                    <ul>
+                        <li><a href="https://francoisroyen.github.io/project-supro/">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Collection</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="about.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <h3>Contact Us</h3>
+                    <p>69 Halsey St, Ny 10002 New York, United States support.center@unerod.co (0091) 8547 632521</p>
+                </div>
+            </nav>
+
             <div class="input">
                 <input type="text" placeholder="Search Searching...">
                 <img src="Charlotte/images/icons/magnifying.png" alt="magnifying glass">
@@ -42,7 +57,13 @@
                 <img src="Charlotte/images/icons/user.png" alt="user profile">
                 <img src="Charlotte/images/icons/heart.png" alt="favourites">
                 <img src="Charlotte/images/icons/shopping-cart.png" alt="shopping-cart">
-                <img src="Charlotte/images/icons/menu.png" alt="menu icon">
+                <div class="navBar">
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -286,5 +307,13 @@
         </section>
     </footer>
 </body>
+<script>
+    var hamburger = document.querySelector(".hamburger");
+    var menuMobile = document.querySelector("nav.mobile");
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        menuMobile.classList.toggle("is-visible");
+    });
+</script>
 
 </html>
