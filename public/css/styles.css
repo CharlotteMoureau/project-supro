@@ -89,7 +89,7 @@ ul {
 
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 17px;
-    height: 1.75px;
+    height: 1px;
   }
 
   .hamburger-inner::before {
@@ -134,11 +134,14 @@ ul {
 
 header {
   display: flex;
+  position: fixed;
+  top: 0;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 8.86vh;
   background-color: #fff;
+  color: #999;
 }
 header .menu {
   display: grid;
@@ -157,7 +160,7 @@ header .menu .supro img {
   height: 25px;
   padding-left: 5%;
 }
-header .menu nav {
+header .menu nav.not-mobile {
   display: none;
 }
 header .menu .input {
@@ -182,6 +185,72 @@ header .menu .user {
 header .menu .user img, header .menu .user .navBar {
   width: 25px;
   height: 25px;
+}
+
+nav.mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 8.86vh;
+  right: -101vw;
+  z-index: 2;
+  width: 100vw;
+  height: calc(100vh - 8.86vh);
+  background-color: #fff;
+}
+nav.mobile .mobile-div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 650px;
+  height: 100%;
+  padding: 2em;
+}
+nav.mobile .mobile-div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 2em;
+}
+nav.mobile .mobile-div ul li {
+  display: flex;
+  width: 100%;
+  height: calc(100% / 6);
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+nav.mobile .mobile-div ul li:last-child {
+  margin-bottom: 0;
+}
+nav.mobile .mobile-div ul a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #999;
+  border-bottom: 1px #999 solid;
+  background: url("../../img/icons/menu-mobile.png") top right no-repeat;
+}
+nav.mobile .mobile-div h3 {
+  color: #222;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 2em;
+}
+nav.mobile .mobile-div p {
+  font-size: 1em;
+}
+
+.is-visible {
+  transform: translateX(-101vw);
+  transition-delay: 0.12s;
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
@@ -231,20 +300,20 @@ header .menu .user img, header .menu .user .navBar {
   header .menu .supro img {
     width: 40%;
   }
-  header .menu nav {
+  header .menu nav.not-mobile {
     display: flex;
     min-width: 30vw;
     justify-content: center;
     align-items: center;
   }
-  header .menu nav div {
+  header .menu nav.not-mobile div {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: flex-start;
     align-items: center;
   }
-  header .menu nav div ul {
+  header .menu nav.not-mobile div ul {
     display: flex;
     width: 100%;
     height: 100%;
@@ -253,15 +322,18 @@ header .menu .user img, header .menu .user .navBar {
     flex-direction: row;
     margin: 0;
   }
-  header .menu nav div ul li {
+  header .menu nav.not-mobile div ul li {
     display: block;
     text-align: center;
     margin-right: 3%;
   }
-  header .menu nav div ul li a {
+  header .menu nav.not-mobile div ul li a {
     text-decoration: none;
     color: #222;
     font-size: 0.9em;
+  }
+  header .menu nav.mobile {
+    display: none;
   }
   header .menu .input {
     display: flex;
@@ -271,8 +343,8 @@ header .menu .user img, header .menu .user .navBar {
     height: 100%;
   }
   header .menu .input img {
-    width: 17px;
-    height: 17px;
+    width: 13px;
+    height: 13px;
   }
   header .menu .input-search {
     display: flex;
@@ -292,12 +364,15 @@ header .menu .user img, header .menu .user .navBar {
   header .menu .user {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-right: 20%;
+    margin-right: 0;
   }
-  header .menu .user img, header .menu .user .navBar {
+  header .menu .user img {
     width: 17px;
     height: 17px;
     padding: 0;
+  }
+  header .menu .user .navBar {
+    display: none;
   }
 }
 .top-sellers {
@@ -985,6 +1060,7 @@ main {
   flex-flow: column;
   max-width: 100vw;
   height: auto;
+  margin-top: 8.86vh;
 }
 main a {
   text-transform: uppercase;
@@ -1069,6 +1145,10 @@ main a {
   }
 }
 @media (min-width: 1008px) {
+  main {
+    margin-top: 0;
+  }
+
   .winter {
     min-height: 50vh;
   }

@@ -2,11 +2,14 @@
 
 header {
   display: flex;
+  position: fixed;
+  top: 0;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 8.86vh;
   background-color: $quinary-color;
+  color: $secondary-color;
   .menu {
     display: grid;
     width: 100%;
@@ -23,7 +26,7 @@ header {
         padding-left: 5%
       }
     }
-    nav {
+    nav.not-mobile {
       display: none;
     }
     .input {
@@ -51,6 +54,72 @@ header {
     }
   }
 }
+
+nav.mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 8.86vh;
+  right: -101vw;
+  z-index: 2;
+  width: 100vw;
+  height: calc(100vh - 8.86vh);
+  background-color: $quinary-color;
+  .mobile-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+    height: 100%;
+    padding: 2em;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 50%;
+      margin-bottom: 2em;
+      li {
+        display: flex;
+        width: 100%;
+        height: calc(100% / 6);
+        font-size: 1.5em;
+        margin-bottom: .5em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: $secondary-color;
+        border-bottom: 1px $secondary-color solid;
+        background: url("../../img/icons/menu-mobile.png") top right no-repeat;
+      }
+    }
+    h3 {
+      color: $primary-color;
+      font-weight: bold;
+      font-size: 1.3em;
+      margin-bottom: 2em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+.is-visible {
+  transform: translateX(-101vw);
+  transition-delay: 0.12s;
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
   header {
@@ -100,7 +169,7 @@ header {
           width: 40%;
         }
       }
-      nav{
+      nav.not-mobile{
         display: flex;
         min-width: 30vw;
         justify-content: center;
@@ -132,6 +201,9 @@ header {
           }
         }
       }
+      nav.mobile {
+        display: none;
+      }
       .input {
         display: flex;
         justify-content: center;
@@ -139,8 +211,8 @@ header {
         width: 100%;
         height: 100%;
         img {
-          width: 17px;
-          height: 17px;
+          width: 13px;
+          height: 13px;
         }
       }
       .input-search {
@@ -161,11 +233,14 @@ header {
       .user {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-right: 20%;
-        img, .navBar {
+        margin-right: 0;
+        img {
           width: 17px;
           height: 17px;
           padding: 0;
+        }
+        .navBar {
+          display: none;
         }
       }
     }
