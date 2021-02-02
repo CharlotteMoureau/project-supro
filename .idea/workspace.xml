@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e011947-3654-442c-a3cd-356844b96fa8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/Layouts/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/Layouts/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/Layouts/_images.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
       <workItem from="1612163746851" duration="9916000" />
       <workItem from="1612176015264" duration="9791000" />
       <workItem from="1612192022920" duration="639000" />
-      <workItem from="1612253702315" duration="6469000" />
+      <workItem from="1612253702315" duration="6687000" />
     </task>
     <servers />
   </component>
