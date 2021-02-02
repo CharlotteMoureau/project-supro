@@ -100,7 +100,8 @@ header {
         width: 40%; }
       header .menu nav {
         display: grid;
-        grid-template-columns: repeat(17, 1fr); }
+        grid-template-columns: repeat(17, 1fr);
+        align-items: center; }
         header .menu nav div {
           grid-area: 1 / 1 / 2 / 10; }
           header .menu nav div ul {
@@ -113,9 +114,19 @@ header {
                 color: #222;
                 font-family: 'Roboto', sans-serif;
                 font-size: 0.9em; }
+                header .menu nav div ul li a::after {
+                  display: block;
+                  content: '';
+                  border-bottom: solid 3px #F2EDE9;
+                  padding-bottom: 5px;
+                  transform: scaleX(0);
+                  transition: transform 250ms ease-in-out; }
+                header .menu nav div ul li a:hover::after {
+                  transform: scaleX(1); }
       header .menu .input {
         display: grid;
-        grid-template-columns: 4fr 3fr; }
+        grid-template-columns: 4fr 3fr;
+        align-items: center; }
         header .menu .input img {
           width: 12.5%; }
         header .menu .input input {
@@ -125,7 +136,8 @@ header {
       header .menu .user {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin-right: 20%; }
+        margin-right: 20%;
+        align-items: center; }
         header .menu .user img {
           width: 40%;
           padding: 0; } }
@@ -554,7 +566,7 @@ footer {
       .about .about-us section .co-founder .quote p {
         margin-top: 0;
         margin-right: 0;
-        font-size: 1.8em;
+        font-size: 1.7em;
         font-weight: 500; }
       .about .about-us section .co-founder h3 {
         margin-top: 7%; }
@@ -783,21 +795,21 @@ footer {
           position: absolute;
           top: 0;
           left: 0;
-          height: 20px;
-          width: 20px;
+          height: 15px;
+          width: 15px;
           border: 2px solid #999; }
           .shop .nav .color .container .checkmark::after {
             content: "";
             position: absolute;
             display: none;
-            left: 7px;
-            top: 2px;
-            width: 5px;
-            height: 10px;
+            left: 5px;
+            top: 1px;
+            width: 3.3px;
+            height: 6.6px;
             border: solid #222;
-            border-width: 0 3px 3px 0;
+            border-width: 0 2px 2px 0;
             border: solid #222;
-            border-width: 0 3px 3px 0;
+            border-width: 0 2px 2px 0;
             transform: rotate(45deg); }
       .shop .nav .color .input {
         text-align: right; }
@@ -911,11 +923,11 @@ footer {
           .shop .big-column .top .filter .not-mobile {
             display: grid;
             grid-template-columns: 1fr 2fr 1fr; }
+            .shop .big-column .top .filter .not-mobile .filter-desktop span {
+              padding-left: 5%; }
             .shop .big-column .top .filter .not-mobile .only-desktop {
               display: grid;
               grid-template-columns: repeat(2, 1fr); }
-              .shop .big-column .top .filter .not-mobile .only-desktop span {
-                padding-left: 5%; }
               .shop .big-column .top .filter .not-mobile .only-desktop img {
                 width: 35%;
                 justify-self: end; }

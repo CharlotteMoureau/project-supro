@@ -22,6 +22,7 @@
             nav{
                 display: grid;
                 grid-template-columns: repeat(17, 1fr);
+                align-items: center;
 
                 div {
                     grid-area: 1 / 1 / 2 / 10;
@@ -37,6 +38,19 @@
                                 color: $primary-color;
                                 font-family: 'Roboto', sans-serif;
                                 font-size: 0.9em;
+
+                                &::after {
+                                    display:block;
+                                    content: '';
+                                    border-bottom: solid 3px $quaternary-color;
+                                    padding-bottom: 5px;
+                                    transform: scaleX(0);  
+                                    transition: transform 250ms ease-in-out;
+                                }
+
+                                &:hover::after {
+                                    transform: scaleX(1);
+                                }
                             }
                         }
                     }
@@ -48,6 +62,7 @@
             .input {
                 display: grid;
                 grid-template-columns: 4fr 3fr;
+                align-items: center;
 
                 img {
                     width: 12.5%;
@@ -63,6 +78,7 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 margin-right: 20%;
+                align-items: center;
                                                                 
                 img {
                     width: 40%;
