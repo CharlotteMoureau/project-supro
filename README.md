@@ -51,6 +51,17 @@ Colors
 - We used Sass as our preprocesser for CSS. 
 - François did the [homepage](https://francoisroyen.github.io/project-supro/) and the mobile menu, Charlotte did the [Shop](https://francoisroyen.github.io/project-supro/shop.html) page and the [About](https://francoisroyen.github.io/project-supro/about.html) page and Asceline did the [Single product](https://francoisroyen.github.io/project-supro/product.html) page and the [Contact](https://francoisroyen.github.io/project-supro/contact.html) page.
 
+#### The Lighthouse results:
+
+##### Homepage
+![](/Charlotte/images/home.png)
+
+##### Shop
+![](/Charlotte/images/shop.png)
+
+##### About
+![](/Charlotte/images/about.png)
+
 ## The final result:
 
 [See the whole website here!](https://francoisroyen.github.io/project-supro/)
