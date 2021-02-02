@@ -57,6 +57,14 @@ The pictures were given to us by the client and we also had to make the pages re
 ##### About
 ![](/Charlotte/images/about.png)
 
+##### Product
+
+![](/Charlotte/images/product.png)
+
+##### Contact
+
+![](/Charlotte/images/contact.png)
+
 ## The final result:
 
 [See the whole website here!](https://francoisroyen.github.io/project-supro/)
