@@ -1,5 +1,11 @@
 @import 'reset';
 
+@import '_burger';
+
+@import '_header_mobile';
+@import '_header_tablet';
+@import '_header_desktop';
+
 @import '_contact_mobile';
 @import '_contact_tablet';
 @import '_contact_desktop';
@@ -8,11 +14,6 @@
 @import '_product_tablet';
 @import '_product_desktop';
 
-@import '_header_mobile';
-@import '_header_tablet';
-@import '_header_desktop';
-
 @import '_footer_mobile';
 @import '_footer_tablet';
 @import '_footer_desktop';
-

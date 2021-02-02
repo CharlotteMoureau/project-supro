@@ -13,9 +13,9 @@
     <header>
         <div class="menu">
             <div class="supro">
-                <img src="Charlotte/images/logo_supro.svg" alt="Supro. logo">
+                <img src="Asceline/Img/icons/logo_supro.svg" alt="Supro. logo">
             </div>
-    
+
             <nav class="not-mobile">
                 <div>
                     <ul>
@@ -28,7 +28,7 @@
                     </ul>
                 </div>
             </nav>
-    
+
             <nav class="mobile">
                 <div class="mobile-div">
                     <ul>
@@ -43,16 +43,16 @@
                     <p>69 Halsey St, Ny 10002 New York, United States support.center@unerod.co (0091) 8547 632521</p>
                 </div>
             </nav>
-    
+
             <div class="input">
                 <input type="text" placeholder="Search Searching...">
-                <img src="Charlotte/images/icons/magnifying.png" alt="magnifying glass">
+                <img src="Asceline/Img/icons/magnifying.png" alt="magnifying glass">
             </div>
-    
+
             <div class="user">
-                <img src="Charlotte/images/icons/user.png" alt="user profile">
-                <img src="Charlotte/images/icons/heart.png" alt="favourites">
-                <img src="Charlotte/images/icons/shopping-cart.png" alt="shopping-cart">
+                <img src="Asceline/Img/icons/user.png" alt="user profile">
+                <img src="Asceline/Img/icons/heart.png" alt="favourites">
+                <img src="Asceline/Img/icons/shopping-cart.png" alt="shopping-cart">
                 <div class="navBar">
                     <button class="hamburger hamburger--spin" type="button">
                         <span class="hamburger-box">
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-    </header>    
+    </header>
     <main class="contact">
         <section class="contact-presentation">
             <div class="image">
@@ -227,4 +227,14 @@
             </section>
         </footer>
 </body>
+
+<script>
+    var hamburger = document.querySelector(".hamburger");
+    var menuMobile = document.querySelector("nav.mobile");
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        menuMobile.classList.toggle("is-visible");
+    });
+</script>
+
 </html>
