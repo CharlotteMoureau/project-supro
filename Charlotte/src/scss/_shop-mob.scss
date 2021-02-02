@@ -3,7 +3,7 @@
 .shop {
     font-family: 'Roboto', sans-serif;
     color: $primary-color;
-    margin-top: 15%;
+    margin-top: 35%;
     font-size: medium;
     padding-left: 3%;
     padding-right: 3%;
@@ -151,8 +151,26 @@
             }
         }
 
-        img {
+        .slidecontainer {
             width: 100%;
+
+            .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 10px;
+                background: $tertiary-color;
+                outline: none;
+                margin-bottom: 8%;
+            }
+
+            .slider::-moz-range-thumb {
+                width: 20px;
+                height: 20px;
+                background: $quinary-color;
+                border: none;
+                box-shadow: 0 0 2px 1px $secondary-color;
+                cursor: pointer;
+              }
         }
 
         p {
@@ -162,18 +180,64 @@
 
         .color {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 9fr 1fr;
             row-gap: 15px;
             margin-top: 5%;
             
             .color-dot {
                 
                 i {
-                    padding-right: 5%;
+                    padding-right: 2%;
                     padding-bottom: 5%;
                 }
             }
             
+            .container {
+                display: block;
+                position: relative;
+                cursor: pointer;
+                                
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+
+                    &:checked ~ .checkmark {
+                        border: 2px solid $primary-color;
+                    }
+
+                    &:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 15px;
+                    width: 15px;
+                    border: 2px solid $secondary-color;
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        left: 5px;
+                        top: 1px;
+                        width: 3.3px;
+                        height: 6.6px;
+                        border: solid $primary-color;
+                        border-width: 0 2px 2px 0;
+                        border: solid $primary-color;
+                        border-width: 0 2px 2px 0;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
             .input {
                 text-align: right;
                 

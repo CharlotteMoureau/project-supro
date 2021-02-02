@@ -25,11 +25,26 @@
                     <ul>
                         <li><a href="https://francoisroyen.github.io/project-supro/">Home</a></li>
                         <li><a href="shop.html">Shop</a></li>
-                        <li><a href="">Collection</a></li>
+                        <li><a href="product.html">Collection</a></li>
                         <li><a href="">Pages</a></li>
                         <li><a href="about.html">Blog</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
+                </div>
+            </nav>
+
+            <nav class="mobile">
+                <div class="mobile-div">
+                    <ul>
+                        <li><a href="https://francoisroyen.github.io/project-supro/">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product.html">Collection</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="about.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <h3>Contact Us</h3>
+                    <p>69 Halsey St, Ny 10002 New York, United States support.center@unerod.co (0091) 8547 632521</p>
                 </div>
             </nav>
 
@@ -42,7 +57,13 @@
                 <img src="Charlotte/images/icons/user.png" alt="user profile">
                 <img src="Charlotte/images/icons/heart.png" alt="favourites">
                 <img src="Charlotte/images/icons/shopping-cart.png" alt="shopping-cart">
-                <img src="Charlotte/images/icons/menu.png" alt="menu icon">
+                <div class="navBar">
+                    <button class="hamburger hamburger--spin" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -66,7 +87,7 @@
 
                         <div class="not-mobile">
 
-                            <div class="only-desktop">
+                            <div class="filter-desktop">
                                 <p>Filter <span><i class="fas fa-angle-down"></i></span></p>
                             </div>
 
@@ -270,33 +291,65 @@
                 </div>
                 <div>
                     <h2>Filter price</h2>
-                    <img src="Charlotte/images/icons/filter-price.png" alt="filter price icon">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
                     <p>PRICE: $0 - $100</p>
                     <div class="color">
+
                         <div class="color-dot">
                             <p><i class="fas fa-circle black"></i>Black</p>
                         </div>
-                        <div class="input"><i class="far fa-check-square"></i></div>
+
+                        <label class="container">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+
                         <div class="color-dot">
                             <p><i class="fas fa-circle blue"></i>Blue</p>
                         </div>
-                        <div class="input"><i class="far fa-square"></i></div>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
                         <div class="color-dot">
                             <p><i class="fas fa-circle gold"></i>Gold</p>
                         </div>
-                        <div class="input"><i class="far fa-square"></i></div>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
                         <div class="color-dot">
                             <p><i class="fas fa-circle nude"></i>Nude</p>
                         </div>
-                        <div class="input"><i class="far fa-square"></i></div>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
                         <div class="color-dot">
                             <p><i class="fas fa-circle orange"></i>Orange</p>
                         </div>
-                        <div class="input"><i class="far fa-square"></i></div>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
                         <div class="color-dot">
                             <p><i class="fas fa-circle red"></i>Red</p>
                         </div>
-                        <div class="input"><i class="far fa-square"></i></div>
+
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
                         <div>
                             <p><span>LMSXL</span></p>
                         </div>
@@ -402,5 +455,13 @@
         </section>
     </footer>
 </body>
+<script>
+    var hamburger = document.querySelector(".hamburger");
+    var menuMobile = document.querySelector("nav.mobile");
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        menuMobile.classList.toggle("is-visible");
+    });
+</script>
 
 </html>

@@ -34,13 +34,15 @@
                         display: grid;
                         grid-template-columns: 1fr 2fr 1fr;
 
-                        .only-desktop {
-                            display: grid;
-                            grid-template-columns: repeat(2, 1fr);
-
+                        .filter-desktop {
                             span {
                                 padding-left: 5%;
                             }
+                        }
+
+                        .only-desktop {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
 
                             img {
                                 width: 35%;
