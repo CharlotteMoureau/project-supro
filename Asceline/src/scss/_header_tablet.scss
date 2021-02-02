@@ -1,0 +1,48 @@
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    header {
+        
+        .menu {
+            display: grid;
+            grid-template-columns: 7fr 1fr 2fr;
+            margin-top: 1%;
+            padding-right: 5%;
+
+            .supro {
+                img {
+                    width: 20%;
+                    padding: 0;
+                }
+            }           
+            
+            .input {
+                img {
+                    width: 30%;
+                    padding-left: 50%;
+                }
+            }
+
+            .user {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                                                
+                img {
+                    width: 60%;                  
+                                        
+                }
+            }
+        } 
+        
+        nav.mobile {
+            top: 5vh;
+            height: calc(100vh - 5vh);
+
+            .mobile-div {
+                ul {
+                    a {
+                        background-size: 5%;
+                    }
+                }
+            }
+        }
+    }
+}
