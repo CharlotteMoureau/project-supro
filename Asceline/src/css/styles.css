@@ -761,12 +761,11 @@ header {
         display: none; }
     .product .article-sale .article-presentation .notice {
       display: flex; }
-      .product .article-sale .article-presentation .notice #stars {
+      .product .article-sale .article-presentation .notice .stars {
         color: #f68773;
         font-size: 0.7em; }
-      .product .article-sale .article-presentation .notice #stars-span {
-        color: #999;
-        font-size: 0.7em; }
+        .product .article-sale .article-presentation .notice .stars span {
+          color: #999; }
       .product .article-sale .article-presentation .notice p {
         font-size: 100%;
         text-align: left;
@@ -986,12 +985,11 @@ header {
           display: inline; }
       .product .article-sale .article-presentation .notice {
         display: flex; }
-        .product .article-sale .article-presentation .notice #stars {
+        .product .article-sale .article-presentation .notice .stars {
           color: #f68773;
           font-size: 0.7em; }
-        .product .article-sale .article-presentation .notice #stars-span {
-          color: #999;
-          font-size: 0.7em; }
+          .product .article-sale .article-presentation .notice .stars span {
+            color: #999; }
         .product .article-sale .article-presentation .notice p {
           font-size: 90%;
           text-align: left;
@@ -1223,12 +1221,11 @@ header {
         width: 50%; }
         .product .article-sale .article-presentation .article-two .notice {
           display: flex; }
-          .product .article-sale .article-presentation .article-two .notice #stars {
+          .product .article-sale .article-presentation .article-two .notice .stars {
             color: #f68773;
             font-size: 0.7em; }
-          .product .article-sale .article-presentation .article-two .notice #stars-span {
-            color: #999;
-            font-size: 0.7em; }
+            .product .article-sale .article-presentation .article-two .notice .stars span {
+              color: #999; }
           .product .article-sale .article-presentation .article-two .notice p {
             font-size: 90%;
             text-align: left;
