@@ -24,6 +24,12 @@ The pictures were given to us by the client and we also had to make the pages re
 ## Instructions:
 
 - The style guide must be stricly observed (Your futur missions with John Lafrite depend on it).
+  - Font : Roboto -> download on Google fonts
+  - Colors
+    -  black : `#222`
+    - grey : `#999`
+    - orange : `#f68773`
+    - color banner top : `#DFDFDF`
 - The website will be responsive.
 - In tablet and mobile, there must be a menu hamburger.
 - The website have to respond to the w3c norms.
@@ -33,17 +39,6 @@ The pictures were given to us by the client and we also had to make the pages re
 - NO BUG, everything must work.
 - Respect the timeline. If not, at least the Homepage, Shop and Single product has to be completed (it's the most important for the client).
 - Everybody in the team must code.
-
-### Style guide:
-
-Font : Roboto -> download on Google fonts
-
-Colors
-
-- black : #222
-- grey : #999
-- orange : #f68773
-- color banner top : #DFDFDF
 
 ### Our method:
 
@@ -65,3 +60,7 @@ Colors
 ## The final result:
 
 [See the whole website here!](https://francoisroyen.github.io/project-supro/)
+
+### This was our motto during the project:
+
+![Yoda](/Charlotte/images/giphy.gif)
