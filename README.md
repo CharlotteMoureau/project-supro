@@ -1,6 +1,6 @@
 # Project-Supro
 
-This was a group project (made with [Asceline Hogge](https://github.com/AscelineHogge), [Charlotte Moureau](https://github.com/CharlotteMoureau) and [François Royen](https://github.com/francoisRoyen)) carried from the 25th of January to the 2nd of February 2021 as part of the BeCode Liège's Junior Web Developer programm. We were tasked to make a website for a fake client "John Lafrite". The client gave us a strict design to follow for his e-commerce website, but gave us free range for the animations.
+This was a group project (made with [Asceline Hogge](https://github.com/AscelineHogge), [Charlotte Moureau](https://github.com/CharlotteMoureau) and [François Royen](https://github.com/francoisRoyen)) carried out from the 25th of January to the 2nd of February 2021 as part of the BeCode Liège's Junior Web Developer program. We were tasked to make a website for a fake client "John Lafrite". The client gave us a strict design to follow for his e-commerce website, but gave us free range for the animations.
 
 ## Learning objectives
 
